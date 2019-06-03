@@ -76,6 +76,8 @@ section{
     z-index: 1000;
     display: block;
     text-transform: uppercase;
+    transform:translateX(-150px);
+    transition:all 0.2s ease;
     .list-group-item {
     position: relative;
     display: block;
@@ -91,8 +93,6 @@ section{
     &.active{
     	background: $gold;
     	width: 140px;
-    	
-
     }
     &:hover{
     	background: $gold;
@@ -101,7 +101,7 @@ section{
     }
 	}
     &.shown{
-
+    	transform:unset;
     }
 }
 #home-hero{
@@ -144,9 +144,15 @@ section{
 		z-index: 2;
 		color:black;
 		font-family: $fontserif;
+		font-weight: bold;
 
 		span{
 			padding-left: 100px;
+		}
+	}
+	@media(max-width: 590px){
+		p{
+			font-size: 3rem;
 		}
 	}
 	img{
@@ -162,5 +168,35 @@ section{
 	}
 	.messlink{
 	transform: translateY(10px);
+	}
+}
+
+#home-stats{
+	.statsbox{
+		padding:8px;
+		background:$l-gray;
+		.statsrows{
+			color: $red;
+			font-family: $fontserif;
+			list-style: none;
+			padding:0;
+			li{
+				img{
+					width:10%;
+					display: inline-block;
+				}
+				p{
+					width:70%;
+					display: inline-block;
+				}
+				span{
+					
+					width:12%;
+					font-size: 3rem;
+					font-weight: bold;
+					display: inline-block;
+				}
+			}
+		}
 	}
 }
