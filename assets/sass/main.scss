@@ -3,26 +3,87 @@
 
 //User Styles
 
+//Global Styles
 $red: #D50032;
 $gold: #ED8B00;
 $black: #373A36;
 $white: #fff;
-$fontarvo: 'Arvo', serif;
-$fontfranklin: 'Libre Franklin', sans-serif;
+$fontserif: 'Arvo', serif;
+$fontsans: 'Libre Franklin', sans-serif;
+
+html{
+	font-size: 12px;
+}
 
 body{
   background: $white;
-  font-family: $fontfranklin;
+  font-family: $fontsans;
+}
+.serif-head{
+	text-transform: uppercase;
+	font-family: $fontserif;
 }
 
-section{
+//Homepage Styles
+.home-wrapper{
+	.row{
 	min-height: 100vh;
-}
+	}
+	p{
+		text-transform: uppercase;
+	}
 
+}
 
 #indexnav{
 position:fixed;
 z-index: 1000;
 display: inline;
 top:100px;
+text-transform: uppercase;
+}
+
+#home-hero{
+		min-height: unset !important;
+		background: url("https://www.fillmurray.com/900/600") no-repeat center center fixed;
+		 -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+	.container-fluid{
+			padding: 20px 35px;
+			.row{
+				min-height: 70vh;
+				color:$white;
+				background:$black;
+			}
+		}
+	h1{
+		position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+
+		top: 95px;
+		z-index: 3;
+		font-size: 1.5rem;
+		font-weight: bold;
+		color:$white;
+		span{
+			color:$red;
+		}
+
+	}
+	p{
+		font-size: 12rem;
+		position: relative;
+		z-index: 2;
+		color:black;
+		font-family: $fontserif;
+
+		span{
+			padding-left: 100px;
+		}
+	}
 }
