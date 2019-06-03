@@ -1,0 +1,14 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Guy Aldous -- Front-End Developer and Digital Designer
+    https://lysdexia.digital/
+    https://www.linkedin.com/in/guy-aldous-691612146/
+    https://www.instagram.com/guyaldous/
+
+
+# TECHNOLOGY COLOPHON
+
+    SASS, Hugo
