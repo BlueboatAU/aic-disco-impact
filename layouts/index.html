@@ -1,6 +1,55 @@
 {{ define "main" }}
 
-<h2>{{ .Title }}</h2>
-    {{ .Content }}
+<!-- nav -->
+<div id="indexnav" class="list-group">
+  <a class="list-group-item list-group-item-action" href="#home-hero">Item 1</a>
+  <a class="list-group-item list-group-item-action" href="#home-about">Item 2</a>
+  <a class="list-group-item list-group-item-action" href="#home-stats">Item 3</a>
+</div>
+
+<div class="scrollspy-list">
+
+<section id="home-hero">
+	<div class="container">
+    	<div class="row">
+    		<div class="col-12 text-center">
+    			   <h1>From Discovery to Impact</h1>
+    		</div>
+    	</div>
+    </div>
+</section>
+<section id="home-about">
+    <div class="container">
+    	<div class="row">
+    		<div class="col-12">
+ 
+  <h4 id="list-item-1">About AIC</h4>
+  <p>{{.Params.description}}</p>
+      		</div>
+    	</div>
+    </div>
+</section>
+<section id="home-stats">
+    <div class="container">
+    	<div class="row">
+    		<div class="col-12">
+ 
+  <h4 id="list-item-2">Statistics</h4>
+  <p>...</p>
+  <h4 id="list-item-3">Research</h4>
+  <p>...</p>
+  <h4 id="list-item-4">Attitudes</h4>
+  <p>...</p>
+   <h4 id="list-item-5">Relationships</h4>
+  <p>...</p>
+   <h4 id="list-item-6">Partners</h4>
+  <p>...</p>
+      		</div>
+    	</div>
+    </div>
+</section>
+  
+   				 {{ .Content }}
+</div>
 
 {{end}}

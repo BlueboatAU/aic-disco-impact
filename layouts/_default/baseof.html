@@ -3,15 +3,23 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>{{.Site.Title}}</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- stylesheets -->
   {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" type="text/css">
-  <meta name="theme-color" content="#fafafa">
+  <!-- js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  {{ $js := resources.Get "js/bootstrap.bundle.min.js" | resources.Minify | resources.Fingerprint }}
+  {{ $jsmain:= resources.Get "js/main.js" | resources.Minify | resources.Fingerprint }}
+   <script src="{{ $js.RelPermalink }}"></script>
+   <script src="{{ $jsmain.RelPermalink }}"></script>
+  <!-- fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Arvo:700|Libre+Franklin:300,400,400i,600,600i&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body  data-spy="scroll" data-target="#indexnav" data-offset="100" >
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->

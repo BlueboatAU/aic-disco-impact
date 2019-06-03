@@ -1,9 +1,28 @@
 //Imports
-
 @import "bootstrap/bootstrap";
 
 //User Styles
 
+$red: #D50032;
+$gold: #ED8B00;
+$black: #373A36;
+$white: #fff;
+$fontarvo: 'Arvo', serif;
+$fontfranklin: 'Libre Franklin', sans-serif;
+
 body{
-  background: var(--light)
+  background: $white;
+  font-family: $fontfranklin;
+}
+
+section{
+	min-height: 100vh;
+}
+
+
+#indexnav{
+position:fixed;
+z-index: 1000;
+display: inline;
+top:100px;
 }
