@@ -1,3 +1,6 @@
 baseURL = "http://example.org/"
 languageCode = "en-au"
 title = "AIC Discovery to Impact"
+
+[permalinks]
+  posts = "/:section/:title/"

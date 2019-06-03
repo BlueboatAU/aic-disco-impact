@@ -7,6 +7,8 @@
 $red: #D50032;
 $gold: #ED8B00;
 $black: #373A36;
+$d-black: #222222;
+$l-gray:#E5E5E5;
 $white: #fff;
 $fontserif: 'Arvo', serif;
 $fontsans: 'Libre Franklin', sans-serif;
@@ -19,33 +21,94 @@ body{
   background: $white;
   font-family: $fontsans;
 }
+a{
+	color:black;
+}
 .serif-head{
 	text-transform: uppercase;
 	font-family: $fontserif;
 }
 
+section{
+	border-top: 1px solid grey;
+}
+.swirl{
+	position: absolute;
+	z-index: 0;
+	left: 0;
+	right: 0;
+	top:250px;
+	margin: auto;
+	img{
+		width:100%;
+		max-width: 800px;
+
+	}
+	
+}
+
 //Homepage Styles
 .home-wrapper{
 	.row{
-	min-height: 100vh;
+	min-height: 30vh;
 	}
 	p{
 		text-transform: uppercase;
 	}
-
+	.homelink{
+		&::before{
+			content:"";
+			 display: inline-block;
+    		transform: translateY(0.15rem);
+			margin-right: 10px;
+			  height:1rem;
+			  width:1rem;
+			  background-size: 1rem 1rem;
+			  background-image: url(/img/circle.svg);
+			  background-repeat: no-repeat;
+		}
+	}
 }
 
 #indexnav{
-position:fixed;
-z-index: 1000;
-display: inline;
-top:100px;
-text-transform: uppercase;
-}
+	position: fixed;
+	top:20vh;
+    z-index: 1000;
+    display: block;
+    text-transform: uppercase;
+    .list-group-item {
+    position: relative;
+    display: block;
+    width:120px;
+    padding: 0.5rem;
+    padding-right: 1.5rem;
+    margin-bottom: 1px;
+    background-color: #fff;
+    background:$l-gray;
+    border: unset;
+    border-radius: 0;
+    transition:all 0.2s ease;
+    &.active{
+    	background: $gold;
+    	width: 140px;
+    	
 
+    }
+    &:hover{
+    	background: $gold;
+    	text-decoration: none;
+    	color: $white;
+    }
+	}
+    &.shown{
+
+    }
+}
 #home-hero{
+	z-index: 100;
+	position: relative;
 		min-height: unset !important;
-		background: url("https://www.fillmurray.com/900/600") no-repeat center center fixed;
+		background: url("/img/home-hero-bg.jpg") no-repeat center center fixed;
 		 -webkit-background-size: cover;
 		  -moz-background-size: cover;
 		  -o-background-size: cover;
@@ -53,9 +116,9 @@ text-transform: uppercase;
 	.container-fluid{
 			padding: 20px 35px;
 			.row{
-				min-height: 70vh;
+				min-height: 60vh;
 				color:$white;
-				background:$black;
+				background:$d-black;
 			}
 		}
 	h1{
@@ -85,5 +148,19 @@ text-transform: uppercase;
 		span{
 			padding-left: 100px;
 		}
+	}
+	img{
+		height:50px;
+		transform: translate(50px, -10px);
+		position: absolute;
+	}
+}
+
+#home-about{
+	.aboutlink{
+	transform: translateY(-50px);
+	}
+	.messlink{
+	transform: translateY(10px);
 	}
 }
