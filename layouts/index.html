@@ -1,5 +1,5 @@
 {{ define "main" }}
-
+<svg class="linesvg"><line class="drawnline" id="aboutline" /><line class="drawnline" id="chairline" /></svg>
 
   <div id="indexnav" class="list-group"  data-spy="affix" data-offset-top="205">
     <a class="list-group-item" href="#home-about">About AIC</a>
@@ -27,19 +27,21 @@
 </section>
 <!-- about -->
 <section id="home-about">
+
   <!-- swirl -->
   <div class="container swirl"><div class="row"><div class="col-12"> <img class="swirl" src="/img/swirl-1.svg" ></div></div></div>
 
     <div class="container">
     	<div class="row align-items-center">
     		<div class="col-12 col-lg-4">
-  				<p>{{.Params.description}}</p>
+  				<p id="desc-target">{{.Params.description}}</p>
+
       		</div>
       		<div class="col-12 col-lg-4 text-center">
-  				<p class="aboutlink">{{ with .Site.GetPage "about"}}<a class="homelink" href="{{ .RelPermalink }}">{{.Title}}</a>{{end}}</p>
+  				<p class="aboutlink">{{ with .Site.GetPage "about"}}<a  id="about-target" class="homelink" href="{{ .RelPermalink }}">{{.Title}}</a>{{end}}</p>
       		</div>
       		<div class="col-12 col-lg-4 text-right">
-  				<p class="messlink">{{ with .Site.GetPage "messages"}}<a class="homelink" href="{{ .RelPermalink }}">{{.Title}}</a>{{end}}</p>
+  				<p class="messlink">{{ with .Site.GetPage "messages"}}<a  id="chair-target" class="homelink" href="{{ .RelPermalink }}">{{.Title}}</a>{{end}}</p>
       		</div>
     	</div>
     </div>
@@ -100,14 +102,14 @@
 <!-- attitudes -->
 <section id="home-att">
   
-
+  <div class="container swirl"><div class="row"><div class="col-12"> <img class="swirl" src="/img/swirl-1.svg" ></div></div></div>
     <div class="container">
     	<div class="row align-items-center">
-        <div class="col-12 newswirl"> <img src="/img/swirl-1.svg" ></div>
-		<div class="col-12 col-lg-4">
+ 
+		<div class="col-12 col-lg-5">
 			{{ with .Site.GetPage "attitudes"}}
             <h2 class="serif-head">{{.Title}}</h2>
-            <p><a href="{{ .RelPermalink }}" class="homelink">See How</a></p>
+            <p class="text-right"><a href="{{ .RelPermalink }}" class="homelink">See How</a></p>
           <p>{{.Params.description}}</p>
     {{end}}
       		</div>
@@ -118,10 +120,10 @@
 <section id="home-rels">
     <div class="container">
     	<div class="row justify-content-end">
-      		<div class="col-12 col-lg-4 text-right">
+      		<div class="col-12 col-lg-5 text-right">
           {{ with .Site.GetPage "relationships"}}
       			<h2 class="serif-head">{{.Title}}</h2>
-            <p><a href="{{ .RelPermalink }}" class="homelink">Learn More</a></p>
+            <p class="text-left"><a href="{{ .RelPermalink }}" class="homelink">Learn More</a></p>
 				  <p>{{.Params.description}}</p>
     {{end}}
       		</div>
