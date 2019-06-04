@@ -5,15 +5,26 @@
 	top: 0;
 	right: 0;
 }
-#about-target{
+#about-target, #chair-target, #how-target{
 	display: inline-block;
 	transform:translate(-14px, -4px);
 }
-#about-target-end{
+#about-target-end, #more-target{
 	display: inline-block;
 	transform:translate(14px, -4px);
 }
-#chair-target{
-	display: inline-block;
-	transform:translate(-14px, -4px);
+#att-target{
+	position: absolute;
+	right: 15px;
+	top: 105px;
+}
+#rel-target{
+	position: absolute;
+	left: 20px;
+	top: 105px;
+}
+.res-targets{
+	position: absolute;
+	left: 5.5rem;
+	top: 5.5rem;
 }

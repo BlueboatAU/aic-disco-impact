@@ -1,172 +1,174 @@
 {{ define "main" }}
+ <!-- lines to draw -->
 <svg class="linesvg">
   <line class="drawnline" id="aboutline" /><line class="drawnline" id="chairline" />
-  <line class="drawnline" id="energyline" /><line class="drawnline" id="infraline" />
-  <line class="drawnline" id="urbanline" /><line class="drawnline" id="healthline" />
-  <line class="drawnline" id="attline" /><line class="drawnline" id="relline" />
-</svg>
-
-  <div id="indexnav" class="list-group"  data-spy="affix" data-offset-top="205">
-    <a class="list-group-item" href="#home-about">About AIC</a>
-    <a class="list-group-item" href="#home-stats">Statistics</a>
-    <a class="list-group-item" href="#home-res">Research</a>
-    <a class="list-group-item" href="#home-att">Attitudes</a>
-    <a class="list-group-item" href="#home-rels">Relationships</a>
-    <a class="list-group-item" href="#home-part">Partners</a>
-  </div>
-
-
-<div class="home-wrapper">
-  <!-- nav -->
-
-<!-- hero -->
-<section id="home-hero">
-	<div class="container-fluid">
-    	<div class="row justify-content-center align-items-center">
-    		<div class="col-12 text-center hero-title-style">
-    			 <h1>From Discovery to <span>Impact</span></h1>
-    			 <p><img src="/img/logo.svg">2014<span>2018</span></p>
-    		</div>
-    	</div>
-    </div>
-</section>
-<!-- about -->
-<section id="home-about">
-
-  <!-- swirl -->
-  <div class="container swirl"><div class="row"><div class="col-12"> <img class="swirl" src="/img/swirl-1.svg" ></div></div></div>
-
-    <div class="container">
-    	<div class="row align-items-center">
-    		<div class="col-12 col-lg-4">
-  				<p>{{.Params.description}}</p><div id="desc-target"></div>
-
-      		</div>
-      		<div class="col-12 col-lg-4 text-center">
-
-          <p class="aboutlink">{{ with .Site.GetPage "about"}}<a class="homelink" href="{{ .RelPermalink }}"><span id="about-target"></span>{{.Title}}<span id="about-target-end"></span></a>{{end}}</p>
-      		</div>
-      		<div class="col-12 col-lg-4 text-right">
-  				<p class="messlink">{{ with .Site.GetPage "messages"}}<a class="homelink" href="{{ .RelPermalink }}"><span id="chair-target"></span>{{.Title}}</a>{{end}}</p>
-      		</div>
-    	</div>
-    </div>
-</section>
-
-<!-- stats -->
-<section id="home-stats">
-    <div class="container">
-    	<div class="row align-items-center">
-
-        <div class="col-12 col-lg-8">
-          <p class="stat-title">Project distribution map – Indonesia & Australia</p>
-            <img style="max-width:80%" src="/img/graph-icons/map.svg">
-          </div>
-
-        <div class="col-12 col-lg-3">
-        <div class="statsbox row justify-content-center align-items-center">
-          <div class="col-12 stat-box-title"><p>Completed Projects</p></div>
-          {{ range sort .Site.Data.homestats }}
-           <div class="col-2 p-0 text-center"><img src="/img/graph-icons/{{.icon}}"></div>
-           <div class="col-7 p-0">{{.name}}</div>
-           <div class="col-3 number p-0">{{.num}}</div>
-           <div class="box-border"></div>
-          {{ end }}
-          </div>
+    <line class="drawnline" id="eneline" /><line class="drawnline" id="infline" />
+      <line class="drawnline" id="urbline" /><line class="drawnline" id="healine" />
+        <line class="drawnline" id="attline" /><line class="drawnline" id="relline" />
+        <circle id="enecircle" r="8" class="drawnline" />
+        <svg id="enearrow" class="drawnline"><polyline points="1.16 0.29 2.87 7.14 9.72 5.43"/></svg>
+        
+        <circle id="infcircle" r="8" class="drawnline" />
+        <svg id="infarrow" class="drawnline"><polyline points="1.16 0.29 2.87 7.14 9.72 5.43"/></svg>
+        
+        <circle id="urbcircle" r="8" class="drawnline" />
+        <svg id="urbarrow" class="drawnline"><polyline points="1.16 0.29 2.87 7.14 9.72 5.43"/></svg>
+        
+        <circle id="heacircle" r="8" class="drawnline" />
+        <svg id="heaarrow" class="drawnline"><polyline points="1.16 0.29 2.87 7.14 9.72 5.43"/></svg>
+        </svg>
+         <!-- nav -->
+        <div id="indexnav" class="list-group"  data-spy="affix" data-offset-top="205">
+          <a class="list-group-item" href="#home-about">About AIC</a>
+          <a class="list-group-item" href="#home-stats">Statistics</a>
+          <a class="list-group-item" href="#home-res">Research</a>
+          <a class="list-group-item" href="#home-att">Attitudes</a>
+          <a class="list-group-item" href="#home-rels">Relationships</a>
+          <a class="list-group-item" href="#home-part">Partners</a>
         </div>
-      </div>
-      <div class="row justify-content-between">
-        <div class="col-lg-6">
-          <p class="stat-title">Project distribution map – Indonesia & Australia</p>
-            <img style="max-width:100%" src="/img/graph-icons/people.svg">
+
+        <div class="body-sans-lines">
+         
+          <!-- hero -->
+          <section id="home-hero">
+            <div class="container-fluid">
+              <div class="row justify-content-center align-items-center">
+                <div class="col-12 text-center hero-title-style">
+                  <h1>From Discovery to <span>Impact</span></h1>
+                  <p><img src="/img/logo.svg">2014<span>2018</span></p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="home-wrapper">
+
+          <!-- about -->
+          <section id="home-about">
+            <!-- swirl -->
+            <div class="container swirl"><div class="row"><div class="col-12"> <img class="swirl" src="/img/swirl-1.svg" ></div></div></div>
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-12 col-lg-4">
+                  <p>{{.Params.description}}</p><div id="desc-target"></div>
+                </div>
+                <div class="col-12 col-lg-4 text-center">
+                  <p class="aboutlink">{{ with .Site.GetPage "about"}}<a class="homelink" href="{{ .RelPermalink }}"><span id="about-target"></span>{{.Title}}<span id="about-target-end"></span></a>{{end}}</p>
+                </div>
+                <div class="col-12 col-lg-4 text-right">
+                  <p class="messlink">{{ with .Site.GetPage "messages"}}<a class="homelink" href="{{ .RelPermalink }}"><span id="chair-target"></span>{{.Title}}</a>{{end}}</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- stats -->
+          <section id="home-stats">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-12 col-lg-8">
+                  <p class="stat-title">Project distribution map – Indonesia & Australia</p>
+                  <img class="map" src="/img/graph-icons/map.svg">
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="statsbox row justify-content-center align-items-center">
+                    <div class="col-12 stat-box-title"><p>Completed Projects</p></div>
+                    {{ range sort .Site.Data.homestats }}
+                    <div class="col-2 p-0 text-center"><img src="/img/graph-icons/{{.icon}}"></div>
+                    <div class="col-7 p-0">{{.name}}</div>
+                    <div class="col-3 number p-0">{{.num}}</div>
+                    <div class="box-border"></div>
+                    {{ end }}
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-between">
+                <div class="col-lg-6">
+                  <p class="stat-title">Project distribution map – Indonesia & Australia</p>
+                  <img class="people" src="/img/graph-icons/people.svg">
+                </div>
+                <div class="col-lg-4">
+                  <p class="stat-title pb-5">Project distribution map – Indonesia & Australia</p>
+                  <img class="countries" src="/img/graph-icons/countries.svg">
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- research -->
+          <section id="home-res">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <h2 class="serif-head">Research</h2>
+                  <ul>
+                    {{ range sort (where .Site.RegularPages "Section" "research") "Params.order" }}
+                    <li><a href="{{ .RelPermalink }}"><span class="res-targets" id="{{ substr (urlize .Title) 0 3 }}-target"></span>{{.Title}}</a></li>
+                    {{ end }}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- attitudes -->
+          <section id="home-att">
+            
+            <div class="container swirl"><div class="row"><div class="col-12"> <img class="swirl" src="/img/swirl-1.svg" ></div></div></div>
+            <div class="container">
+              <div class="row align-items-center">
+                
+                <div class="col-12 col-lg-5">
+                  {{ with .Site.GetPage "attitudes"}}
+                  <h2 class="serif-head">{{.Title}}</h2>
+                  <p class="text-right att-link"><a href="{{ .RelPermalink }}" class="homelink"><span id="how-target"></span>See How</a></p>
+                  <p>{{.Params.description}}</p><div id="att-target"></div>
+                  {{end}}
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- relationships -->
+          <section id="home-rels">
+            <div class="container">
+              <div class="row justify-content-end">
+                <div class="col-12 col-lg-5 text-right">
+                  {{ with .Site.GetPage "relationships"}}
+                  <h2 class="serif-head">{{.Title}}</h2>
+                  <p class="text-left rel-link"><a href="{{ .RelPermalink }}" class="homelink rightlink">Learn More<span id="more-target"></span></a></p>
+                  <p>{{.Params.description}}</p><div id="rel-target"></div>
+                  {{end}}
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-        <div class="col-lg-4">
-          <p class="stat-title pb-5">Project distribution map – Indonesia & Australia</p>
-            <img style="max-width:100%" src="/img/graph-icons/countries.svg">
+          <!-- footer title -->
+          <section id="home-title">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 text-center hero-title-style">
+                  <h1>From Discovery to <span>Impact</span></h1>
+                  <p>2014<span>2018</span></p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- partners -->
+          <section id="home-part">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <p>An Initiative Of</p>
+                  <img src="/img/partners/partners-1.svg">
+                  <p>In Collaboration With</p>
+                  <img class="pr-5" src="/img/partners/partners-2.svg">
+                  <img src="/img/partners/partners-3.svg">
+                  <p>Supported By</p>
+                  <img src="/img/partners/partners-4.svg">
+                  <p>With Corporate Partners</p>
+                  <img src="/img/partners/partners-5.svg">
+                </div>
+              </div>
+            </div>
+          </section>
+          {{ .Content }}
         </div>
-    	</div>
-    </div>
-</section>
-
-<!-- research -->
-<section id="home-res">
-    <div class="container">
-    	<div class="row">
-    		<div class="col-12 text-center">
-
-  <h2 class="serif-head">Research</h2>
-  <ul>
-  	
-    {{ range sort (where .Site.RegularPages "Section" "research") "Params.order" }}
-		<li><a href="{{ .RelPermalink }}">{{.Title}}</a></li>
-	{{ end }}
-  </ul>
-      		</div>
-    	</div>
-    </div>
-</section>
-
-<!-- attitudes -->
-<section id="home-att">
-  
-  <div class="container swirl"><div class="row"><div class="col-12"> <img class="swirl" src="/img/swirl-1.svg" ></div></div></div>
-    <div class="container">
-    	<div class="row align-items-center">
- 
-		<div class="col-12 col-lg-5">
-			{{ with .Site.GetPage "attitudes"}}
-            <h2 class="serif-head">{{.Title}}</h2>
-            <p class="text-right"><a href="{{ .RelPermalink }}" class="homelink">See How</a></p>
-          <p>{{.Params.description}}</p>
-    {{end}}
-      		</div>
-
-    	</div>
-    </div>
-</section>
-
-<!-- relationships -->
-<section id="home-rels">
-    <div class="container">
-    	<div class="row justify-content-end">
-      		<div class="col-12 col-lg-5 text-right">
-          {{ with .Site.GetPage "relationships"}}
-      			<h2 class="serif-head">{{.Title}}</h2>
-            <p class="text-left"><a href="{{ .RelPermalink }}" class="homelink">Learn More</a></p>
-				  <p>{{.Params.description}}</p>
-    {{end}}
-      		</div>
-    	</div>
-    </div>
-</section>
-<section id="home-title">
-      <div class="container">
-      <div class="row">
-        <div class="col-12 text-center hero-title-style">
-  <h1>From Discovery to <span>Impact</span></h1>
-  <p>2014<span>2018</span></p>
-          </div>
-        </div>
-      </div>
-</section>
-<section id="home-part">
-    <div class="container">
-    	<div class="row">
-    		<div class="col-12 text-center">
-	         <p>An Initiative Of</p>
-           <img src="/img/partners/partners-1.svg">
-           <p>In Collaboration With</p>
-           <img class="pr-5" src="/img/partners/partners-2.svg">
-           <img src="/img/partners/partners-3.svg">
-           <p>Supported By</p>
-           <img src="/img/partners/partners-4.svg">
-           <p>With Corporate Partners</p>
-           <img src="/img/partners/partners-5.svg">
-      		</div>
-    	</div>
-    </div>
-</section>
-   				 {{ .Content }}
-</div>
-
-{{end}}
+        {{end}}
