@@ -1,0 +1,32 @@
+{
+	 "1": {
+	   "name": "Strategic Research Projects",
+	   "icon": "icon-1.svg",
+	   "num": "30"
+	 },
+	 "2": {
+	   "name": "Tactical Research Projects",
+	   "icon": "icon-6.svg",
+	   "num": "19"
+	 },
+	 "3": {
+	   "name": "Small Projects",
+	   "icon": "icon-5.svg",
+	   "num": "23"
+	 },
+	 "4": {
+	   "name": "Rapid Start",
+	   "icon": "icon-4.svg",
+	   "num": "3"
+	 },
+	 "5": {
+	   "name": "CAPACITY PROGRAM",
+	   "icon": "icon-3.svg",
+	   "num": "2"
+	 },
+	 "6": {
+	   "name": "Cluster Planning",
+	   "icon": "icon-2.svg",
+	   "num": "5"
+	 }
+}

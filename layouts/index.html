@@ -18,7 +18,7 @@
 <section id="home-hero">
 	<div class="container-fluid">
     	<div class="row justify-content-center align-items-center">
-    		<div class="col-12 text-center">
+    		<div class="col-12 text-center hero-title-style">
     			 <h1>From Discovery to <span>Impact</span></h1>
     			 <p><img src="/img/logo.svg">2014<span>2018</span></p>
     		</div>
@@ -49,37 +49,47 @@
 <section id="home-stats">
     <div class="container">
     	<div class="row align-items-center">
+
         <div class="col-12 col-lg-8">
-            <img style="max-width:80%" src="/img/stats-map.png">
+          <p class="stat-title">Project distribution map – Indonesia & Australia</p>
+            <img style="max-width:80%" src="/img/graph-icons/map.svg">
           </div>
-        <div class="col-12 col-lg-4">
-          <div class="statsbox">
-          <p>Completed Projects</p>
-            <ul class="statsrows">
-            <li><img src="/img/icon.png"><p>Strategic Research Projects</p><span>30</span></li>
-            <li><img src="/img/icon.png"><p>Tactical Research Projects</p><span>19</span></li>
-            <li><img src="/img/icon.png"><p>Small Projects</p><span>23</span></li>
-            <li><img src="/img/icon.png"><p>Rapid Start</p><span>3</span></li>
-            <li><img src="/img/icon.png"><p>CAPACITY PROGRAM</p><span>2</span></li>
-            <li><img src="/img/icon.png"><p>Cluster Planning</p><span>5</span></li>
-            </ul>
+
+        <div class="col-12 col-lg-3">
+        <div class="statsbox row justify-content-center align-items-center">
+          <div class="col-12 stat-box-title"><p>Completed Projects</p></div>
+          {{ range sort .Site.Data.homestats }}
+           <div class="col-2 p-0 text-center"><img src="/img/graph-icons/{{.icon}}"></div>
+           <div class="col-7 p-0">{{.name}}</div>
+           <div class="col-3 number p-0">{{.num}}</div>
+           <div class="box-border"></div>
+          {{ end }}
           </div>
         </div>
-    		<div class="col-12">
-      			<img style="max-width:100%" src="/img/stats.png">
-      		</div>
+      </div>
+      <div class="row justify-content-between">
+        <div class="col-lg-6">
+          <p class="stat-title">Project distribution map – Indonesia & Australia</p>
+            <img style="max-width:100%" src="/img/graph-icons/people.svg">
+        </div>
+        <div class="col-lg-4">
+          <p class="stat-title pb-5">Project distribution map – Indonesia & Australia</p>
+            <img style="max-width:100%" src="/img/graph-icons/countries.svg">
+        </div>
     	</div>
     </div>
 </section>
-<!-- stats -->
+
+<!-- research -->
 <section id="home-res">
     <div class="container">
     	<div class="row">
-    		<div class="col-12">
+    		<div class="col-12 text-center">
 
   <h2 class="serif-head">Research</h2>
   <ul>
-  	{{ range where .Site.RegularPages "Section" "research" }}
+  	
+    {{ range sort (where .Site.RegularPages "Section" "research") "Params.order" }}
 		<li><a href="{{ .RelPermalink }}">{{.Title}}</a></li>
 	{{ end }}
   </ul>
@@ -87,9 +97,13 @@
     	</div>
     </div>
 </section>
+<!-- attitudes -->
 <section id="home-att">
+  
+
     <div class="container">
-    	<div class="row">
+    	<div class="row align-items-center">
+        <div class="col-12 newswirl"> <img src="/img/swirl-1.svg" ></div>
 		<div class="col-12 col-lg-4">
 			{{ with .Site.GetPage "attitudes"}}
             <h2 class="serif-head">{{.Title}}</h2>
@@ -97,6 +111,7 @@
           <p>{{.Params.description}}</p>
     {{end}}
       		</div>
+
     	</div>
     </div>
 </section>
@@ -113,12 +128,29 @@
     	</div>
     </div>
 </section>
+<section id="home-title">
+      <div class="container">
+      <div class="row">
+        <div class="col-12 text-center hero-title-style">
+  <h1>From Discovery to <span>Impact</span></h1>
+  <p>2014<span>2018</span></p>
+          </div>
+        </div>
+      </div>
+</section>
 <section id="home-part">
     <div class="container">
     	<div class="row">
-    		<div class="col-12">
-	   <h2 class="serif-head">Partners</h2>
-	  <p>...</p>
+    		<div class="col-12 text-center">
+	         <p>An Initiative Of</p>
+           <img src="/img/partners/partners-1.svg">
+           <p>In Collaboration With</p>
+           <img class="pr-5" src="/img/partners/partners-2.svg">
+           <img src="/img/partners/partners-3.svg">
+           <p>Supported By</p>
+           <img src="/img/partners/partners-4.svg">
+           <p>With Corporate Partners</p>
+           <img src="/img/partners/partners-5.svg">
       		</div>
     	</div>
     </div>

@@ -14,12 +14,13 @@ $fontserif: 'Arvo', serif;
 $fontsans: 'Libre Franklin', sans-serif;
 
 html{
-	font-size: 12px;
+	font-size: 10px;
 }
 
 body{
   background: $white;
   font-family: $fontsans;
+  color: $d-black;
 }
 a{
 	color:black;
@@ -27,17 +28,16 @@ a{
 .serif-head{
 	text-transform: uppercase;
 	font-family: $fontserif;
+	font-weight: bold;
+	font-size: 4rem;
 }
-
-section{
-	border-top: 1px solid grey;
-}
+// design helper to deliniate sections => section{border-top: 1px solid grey;}
 .swirl{
 	position: absolute;
 	z-index: 0;
 	left: 0;
 	right: 0;
-	top:250px;
+	top:200px;
 	margin: auto;
 	img{
 		width:100%;
@@ -46,11 +46,55 @@ section{
 	}
 	
 }
+.newswirl{
+	text-align: center;
+	margin-bottom: -100px;
+	img{
+	max-width: 800px;
+	}
+}
+
+.hero-title-style{
+	h1{
+		position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		top: 80px;
+		z-index: 3;
+		font-size: 1.5rem;
+		font-weight: bold;
+		color:$white;
+		span{
+			color:$red;
+		}
+
+	}
+	p{
+		font-size: 12rem;
+		position: relative;
+		z-index: 2;
+		color:black;
+		font-family: $fontserif;
+		font-weight: bold;
+		span{
+			padding-left: 100px;
+		}
+	}
+	@media(max-width: 590px){
+		p{
+			font-size: 3rem;
+		}
+	}
+}
 
 //Homepage Styles
 .home-wrapper{
 	.row{
 	min-height: 30vh;
+	margin-top: 60px;
+	margin-bottom: 60px;
 	}
 	p{
 		text-transform: uppercase;
@@ -119,42 +163,11 @@ section{
 				min-height: 60vh;
 				color:$white;
 				background:$d-black;
+				margin-top: unset;
+				margin-bottom: unset;
 			}
 		}
-	h1{
-		position: absolute;
-		margin-left: auto;
-		margin-right: auto;
-		left: 0;
-		right: 0;
-
-		top: 95px;
-		z-index: 3;
-		font-size: 1.5rem;
-		font-weight: bold;
-		color:$white;
-		span{
-			color:$red;
-		}
-
-	}
-	p{
-		font-size: 12rem;
-		position: relative;
-		z-index: 2;
-		color:black;
-		font-family: $fontserif;
-		font-weight: bold;
-
-		span{
-			padding-left: 100px;
-		}
-	}
-	@media(max-width: 590px){
-		p{
-			font-size: 3rem;
-		}
-	}
+	
 	img{
 		height:50px;
 		transform: translate(50px, -10px);
@@ -172,31 +185,110 @@ section{
 }
 
 #home-stats{
+	.stat-title{
+		padding-bottom: 20px;
+	}
+
 	.statsbox{
-		padding:8px;
+		padding:0px;
 		background:$l-gray;
-		.statsrows{
 			color: $red;
 			font-family: $fontserif;
-			list-style: none;
-			padding:0;
-			li{
+			text-transform: uppercase;
+			.stat-box-title{
+			color: $d-black;
+			font-family: $fontsans;
+			padding:10px 0 0 10px;
+			}
 				img{
-					width:10%;
-					display: inline-block;
+					width:25px;
+
 				}
-				p{
-					width:70%;
-					display: inline-block;
-				}
-				span{
-					
-					width:12%;
+				.number{
+					text-align: center;
 					font-size: 3rem;
 					font-weight: bold;
-					display: inline-block;
+					line-height: 60px;
+				}
+			.box-border{
+				width: 90%;
+				border-bottom: 1px solid $black;
+				opacity: 0.34;
+				&:last-child{
+					border-bottom: none;
 				}
 			}
+	}
+}
+#home-res{
+	h2{
+		position: absolute;
+		top:230px;
+		left: 350px;
+
+	}
+	ul{
+		padding: 0;
+		margin: 0;
+		display: inline-block;
+	}
+	li{
+		list-style: none;
+		border:2px solid $gold;
+		border-radius: 10rem;
+		width:11rem;
+		height:11rem;
+		padding: 10px;
+		text-align: center;
+		text-transform: uppercase;
+		display: table;
+		padding: 0;
+		margin-bottom: 6rem;
+		&:nth-child(1){
+			transform:translateX(50px);	
 		}
+		&:nth-child(2){
+			transform:translateX(180px);	
+		}
+		&:nth-child(3){
+			transform:translateX(-60px);	
+		}
+		&:nth-child(4){
+			transform:translateX(-120px);	
+		}
+		&:nth-child(5){
+			transform:translateX(60px);	
+		}
+		a{
+			vertical-align: middle;
+			display: table-cell;
+
+		}
+	}
+}
+#home-title{
+	background:$d-black;
+	height: 50px;
+	.container{
+			padding: 20px 35px;
+			position: relative;
+			top: -145px;
+			.row{
+				color:$white;
+				
+			}
+		}
+	
+}
+#home-part{
+	
+	//background: #F2F2F2;
+	img{
+		max-height: 50px;
+
+	}
+	p{
+		padding-bottom: 1rem;
+		padding-top: 5rem;
 	}
 }
