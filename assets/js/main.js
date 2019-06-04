@@ -10,7 +10,7 @@ $(window).scroll(function() {
     }
 });
 
-//draw lines
+//function that draws the lines
 function drawLine(d1, d2, l){
   let div1 = $(`#${d1}`);
   let div2 = $(`#${d2}`);
@@ -22,11 +22,11 @@ function drawLine(d1, d2, l){
   console.log(`${pos1.top} ${pos1.left} and ${pos2.top}`);
 }
 
+//list of lines to draw
 function drawTheLines(){
   drawLine('desc-target', 'about-target', 'aboutline');
-  drawLine('about-target', 'chair-target', 'chairline');
-}
-    
+  drawLine('about-target-end', 'chair-target', 'chairline');
+} 
 
 //init
 window.onload = function() {

@@ -1,0 +1,19 @@
+//line target positoning
+
+#desc-target{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#about-target{
+	display: inline-block;
+	transform:translate(-14px, -4px);
+}
+#about-target-end{
+	display: inline-block;
+	transform:translate(14px, -4px);
+}
+#chair-target{
+	display: inline-block;
+	transform:translate(-14px, -4px);
+}

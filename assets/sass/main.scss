@@ -1,7 +1,8 @@
-//Imports
+//Import Libraries
 @import "bootstrap/bootstrap";
 
 //User Styles
+@import "linetargets";
 
 //Global Styles
 $red: #D50032;
@@ -38,7 +39,7 @@ a{
 	height: 100%;
 	.drawnline{ 
 		stroke:$red;
-		stroke-width:2; 
+		stroke-width:1; 
 		stroke-linecap:butt;
 	}
 }
@@ -111,6 +112,24 @@ a{
 		text-transform: uppercase;
 	}
 	.homelink{
+
+		&::before{
+		   content: '';
+		   display: inline-block;
+		   width: 1.4rem;
+		   height: 1.4rem;
+		   -moz-border-radius: 20px;
+		   -webkit-border-radius: 20px;
+		   border-radius: 20px;
+		   border:1px solid $gold;
+		   background-color: $white;
+		   margin-right: 10px;
+		   transform: translateY(0.2rem);
+	}
+
+		/*
+			before as svg
+
 		&::before{
 			content:"";
 			 display: inline-block;
@@ -121,7 +140,7 @@ a{
 			  background-size: 1rem 1rem;
 			  background-image: url(/img/circle.svg);
 			  background-repeat: no-repeat;
-		}
+		}*/
 	}
 }
 
@@ -199,14 +218,19 @@ a{
 	.stat-title{
 		padding-bottom: 20px;
 	}
-
+	.map{
+	max-width: 600px;
+    width: 100%;
+	}
 	.statsbox{
 		padding:0px;
 		background:$l-gray;
 			color: $red;
 			font-family: $fontserif;
 			text-transform: uppercase;
+			font-weight: bold;
 			.stat-box-title{
+				font-weight: normal;
 			color: $d-black;
 			font-family: $fontsans;
 			padding:10px 0 0 10px;
@@ -288,9 +312,15 @@ a{
 	.swirl{
 		top:1250px;
 	}
+	.att-link{
 
+	}
 }
-
+#home-rel{
+	.rel-link{
+		
+	}
+}
 #home-title{
 	background:$d-black;
 	height: 50px;
