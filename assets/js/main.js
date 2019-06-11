@@ -3,7 +3,7 @@
 
 //show menu on scroll
 $(window).scroll(function() {
-    if ($(this).scrollTop() >= $("#home-hero").height() ) { 
+    if ($(this).scrollTop() >= $("#home-hero").height() || $(this).scrollTop() > 100 ) { 
         $('#indexnav').addClass("shown");
     } else {
     $('#indexnav').removeClass("shown");
@@ -59,7 +59,9 @@ function drawTheLines(){
   let docsize = $('.body-sans-lines').height();
   //used for testing ==> console.log(docsize);
   $('.linesvg').css('height', docsize);
-  //about lines
+
+  if(location.pathname === '/'){
+    //about lines
   drawLine('desc-target', 'about-target', 'aboutline');
   drawLine('about-target-end', 'chair-target', 'chairline');
   //res lines
@@ -75,6 +77,11 @@ function drawTheLines(){
    drawCircle('inf-target', 'urb-target', 'infcircle', 'infarrow');
   drawCircle('urb-target', 'hea-target', 'urbcircle', 'urbarrow');
   drawCircle('hea-target', 'foo-target', 'heacircle', 'heaarrow');
+  } else {
+      drawLine('top-target', 'bot-target', 'intline');
+  }
+
+  
 
 } 
 
@@ -84,6 +91,8 @@ window.onload = function() {
     //draw lines
     drawTheLines();
     
+    //used for testing ==> console.log(location.pathname);
+
     //smoothscroll
     $('.list-group-item').click(function() {
       var sectionTo = $(this).attr('href');

@@ -28,3 +28,9 @@
 	left: 5.5rem;
 	top: 5.5rem;
 }
+
+#int-wrap{
+	#top-target, #bot-target{
+		transform:translate(-12px, 10px);
+	}
+}

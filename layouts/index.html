@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $isHome := true }}
  <!-- lines to draw -->
 <svg class="linesvg">
   <line class="drawnline" id="aboutline" /><line class="drawnline" id="chairline" />
@@ -17,15 +18,8 @@
         <circle id="heacircle" r="8" class="drawnline" />
         <svg id="heaarrow" class="drawnline"><polyline points="1.16 0.29 2.87 7.14 9.72 5.43"/></svg>
         </svg>
-         <!-- nav -->
-        <div id="indexnav" class="list-group"  data-spy="affix" data-offset-top="205">
-          <a class="list-group-item" href="#home-about">About AIC</a>
-          <a class="list-group-item" href="#home-stats">Statistics</a>
-          <a class="list-group-item" href="#home-res">Research</a>
-          <a class="list-group-item" href="#home-att">Attitudes</a>
-          <a class="list-group-item" href="#home-rels">Relationships</a>
-          <a class="list-group-item" href="#home-part">Partners</a>
-        </div>
+
+          
 
         <div class="body-sans-lines">
          
@@ -101,7 +95,9 @@
                   <h2 class="serif-head">Research</h2>
                   <ul>
                     {{ range sort (where .Site.RegularPages "Section" "research") "Params.order" }}
-                    <li><a href="{{ .RelPermalink }}"><span class="res-targets" id="{{ substr (urlize .Title) 0 3 }}-target"></span>{{.Title}}</a></li>
+                    <li onClick="document.location.href='{{ .RelPermalink }}';"><a href="{{ .RelPermalink }}"><span class="res-targets" id="{{ substr (urlize .Title) 0 3 }}-target"></span>{{.Title}}</a>
+                      <div class='circle-bg'>
+                      </div></li>
                     {{ end }}
                   </ul>
                 </div>
@@ -140,35 +136,8 @@
             </div>
           </section>
         </div>
-          <!-- footer title -->
-          <section id="home-title">
-            <div class="container">
-              <div class="row">
-                <div class="col-12 text-center hero-title-style">
-                  <h1>From Discovery to <span>Impact</span></h1>
-                  <p>2014<span>2018</span></p>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- partners -->
-          <section id="home-part">
-            <div class="container">
-              <div class="row">
-                <div class="col-12 text-center">
-                  <p>An Initiative Of</p>
-                  <img src="/img/partners/partners-1.svg">
-                  <p>In Collaboration With</p>
-                  <img class="pr-5" src="/img/partners/partners-2.svg">
-                  <img src="/img/partners/partners-3.svg">
-                  <p>Supported By</p>
-                  <img src="/img/partners/partners-4.svg">
-                  <p>With Corporate Partners</p>
-                  <img src="/img/partners/partners-5.svg">
-                </div>
-              </div>
-            </div>
-          </section>
+          
           {{ .Content }}
         </div>
+
         {{end}}

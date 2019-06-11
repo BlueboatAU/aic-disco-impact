@@ -19,7 +19,36 @@
    <link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Libre+Franklin:300,400,400i,600,600i&display=swap" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target="#indexnav" data-offset="50" >
+
+    {{ if .IsHome }}
+    <body data-spy="scroll" data-target="#indexnav" data-offset="50" >
+         <!-- nav -->
+        <div id="indexnav" class="list-group"  data-spy="affix" data-offset-top="205">
+          <a class="list-group-item" href="#home-about">About AIC</a>
+          <a class="list-group-item" href="#home-stats">Statistics</a>
+          <a class="list-group-item" href="#home-res">Research</a>
+          <a class="list-group-item" href="#home-att">Attitudes</a>
+          <a class="list-group-item" href="#home-rels">Relationships</a>
+          <a class="list-group-item" href="#home-part">Partners</a>
+        </div>
+      {{ else }}
+      <body >
+       <!-- nav -->
+        <div id="indexnav" class="list-group">
+          <a class="list-group-item" href="/">Home</a>
+          <a class='list-group-item {{ if eq .File.LogicalName "about.md" }}active{{end}}' href="/about">About AIC</a>
+          <a class='list-group-item {{ if eq .Section "research" }}active{{end}}' href="/#home-res">Research</a> 
+            <ul class='{{ if ne .Section "research" }}d-none{{end}}'>
+              {{ range sort (where .Site.RegularPages "Section" "research") "Params.order" }}
+              <li><a href="{{ .RelPermalink }}" class=''>{{.Title}}</a></li>
+              {{ end }}
+            </ul>
+          <a class='list-group-item {{ if eq .File.LogicalName "attitudes.md" }}active{{end}}' href="/attitudes">Attitudes</a>
+          <a class='list-group-item {{ if eq .File.LogicalName "relationships.md" }}active{{end}}' href="/relationships">Relationships</a>
+          <a class='list-group-item' href="#home-part">Partners</a>
+        </div>
+      {{ end }}
+
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
@@ -28,6 +57,37 @@
   {{ block "main" . }}
 
   {{ end }}
+
+          <!-- footer title -->
+          <section id="home-title">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 text-center hero-title-style">
+                  <h1>From Discovery to <span>Impact</span></h1>
+                  <p>2014<span>2018</span></p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- partners -->
+          <section id="home-part">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <p>An Initiative Of</p>
+                  <img src="/img/partners/partners-1.svg">
+                  <p>In Collaboration With</p>
+                  <img class="pr-5" src="/img/partners/partners-2.svg">
+                  <img src="/img/partners/partners-3.svg">
+                  <p>Supported By</p>
+                  <img src="/img/partners/partners-4.svg">
+                  <p>With Corporate Partners</p>
+                  <img src="/img/partners/partners-5.svg">
+                </div>
+              </div>
+            </div>
+          </section>
+
 </body>
 
 </html>
