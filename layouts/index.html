@@ -61,16 +61,16 @@
               <div class="row align-items-center">
                 <div class="col-12 col-lg-8">
                   <p class="stat-title">Project distribution map – Indonesia & Australia</p>
-                  <img class="map" src="/img/graph-icons/map.svg">
+                  <img data-sal="slide-right" data-sal-delay="200" data-sal-duration="600" class="map" src="/img/graph-icons/map.svg">
                 </div>
                 <div class="col-12 col-lg-4">
-                  <div class="statsbox row justify-content-center align-items-center">
+                  <div data-sal="slide-left" data-sal-duration="600" class="statsbox row justify-content-center align-items-center">
                     <div class="col-12 stat-box-title"><p>Completed Projects</p></div>
                     {{ range sort .Site.Data.homestats }}
-                    <div class="col-2 p-0 text-center"><img src="/img/graph-icons/{{.icon}}"></div>
-                    <div class="col-7 p-0">{{.name}}</div>
-                    <div class="col-3 number p-0">{{.num}}</div>
-                    <div class="box-border"></div>
+                    <div  class="col-2 p-0 text-center"><img  src="/img/graph-icons/{{.icon}}"></div>
+                    <div  class="col-7 p-0">{{.name}}</div>
+                    <div  class="col-3 number p-0">{{.num}}</div>
+                    <div  class="box-border"></div>
                     {{ end }}
                   </div>
                 </div>
@@ -78,11 +78,11 @@
               <div class="row justify-content-between">
                 <div class="col-lg-6">
                   <p class="stat-title">Project distribution map – Indonesia & Australia</p>
-                  <img class="people" src="/img/graph-icons/people.svg">
+                  <img data-sal="slide-up"  data-sal-duration="600" class="people" src="/img/graph-icons/people.svg">
                 </div>
                 <div class="col-lg-4">
                   <p class="stat-title pb-5">Project distribution map – Indonesia & Australia</p>
-                  <img class="countries" src="/img/graph-icons/countries.svg">
+                  <img data-sal="slide-up" data-sal-delay="200"  data-sal-duration="600" class="countries" src="/img/graph-icons/countries.svg">
                 </div>
               </div>
             </div>

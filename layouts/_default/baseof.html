@@ -34,9 +34,10 @@
       {{ else }}
       <body >
        <!-- nav -->
-        <div id="indexnav" class="list-group">
+        <div id="indexnav" class="list-group shown">
           <a class="list-group-item" href="/">Home</a>
           <a class='list-group-item {{ if eq .File.LogicalName "about.md" }}active{{end}}' href="/about">About AIC</a>
+          <a class='list-group-item {{ if eq .File.LogicalName "messages.md" }}active{{end}}' href="/messages">Messages</a>
           <a class='list-group-item {{ if eq .Section "research" }}active{{end}}' href="/#home-res">Research</a> 
             <ul class='{{ if ne .Section "research" }}d-none{{end}}'>
               {{ range sort (where .Site.RegularPages "Section" "research") "Params.order" }}
@@ -45,7 +46,7 @@
             </ul>
           <a class='list-group-item {{ if eq .File.LogicalName "attitudes.md" }}active{{end}}' href="/attitudes">Attitudes</a>
           <a class='list-group-item {{ if eq .File.LogicalName "relationships.md" }}active{{end}}' href="/relationships">Relationships</a>
-          <a class='list-group-item' href="#home-part">Partners</a>
+          
         </div>
       {{ end }}
 

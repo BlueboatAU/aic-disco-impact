@@ -1,6 +1,6 @@
 //Import Libraries
 @import "bootstrap/bootstrap";
-
+@import "sal";
 //User Styles
 @import "linetargets";
 
@@ -13,6 +13,8 @@ $l-gray:#E5E5E5;
 $white: #fff;
 $fontserif: 'Arvo', serif;
 $fontsans: 'Libre Franklin', sans-serif;
+
+[data-entrance] { visibility: hidden; }
 
 html{
 	font-size: 10px;
@@ -70,13 +72,7 @@ a{
 	}
 	
 }
-.newswirl{
-	text-align: center;
-	margin-bottom: -100px;
-	img{
-	max-width: 800px;
-	}
-}
+
 
 //nav styles
 #indexnav{
@@ -118,9 +114,10 @@ a{
     	transform:unset;
     }
      ul{
-    	margin: 0.8rem 0;
+    	margin: 2px 0;
     	list-style: none;
-    	padding-left:10px;
+    	padding: 10px 0.8rem 10px;
+    	background:$white;
     	li{
     		margin-bottom: 0.2rem;
     		&:hover{
@@ -341,8 +338,8 @@ a{
 	}
 	h2{
 		position: absolute;
-		top:230px;
-		left: 350px;
+		top:18vh;
+		left: 15vw;
 
 	}
 	ul{
@@ -439,7 +436,7 @@ a{
 		margin-top: 0;
 	}
 	.swirl{
-		top:1300px;
+		top:1250px;
 	}
 	h2{
 		padding-bottom: 20px;
@@ -549,6 +546,10 @@ a{
 //internal page body
 
 #int-wrap{
+	padding:0 200px;
+	@media(max-width: 992px){
+		padding: 0;
+	}
 	.row{
 		   margin-bottom: 60px;
 		     z-index: 3;
