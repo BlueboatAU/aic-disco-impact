@@ -29,7 +29,7 @@
               <div class="row justify-content-center align-items-center">
                 <div class="col-12 text-center hero-title-style">
                   <h1>From Discovery to <span>Impact</span></h1>
-                  <p><img src="/img/logo.svg">2014<span>2018</span></p>
+                  <p><img src="{{.Site.BaseURL}}img/logo.svg">2014<span>2018</span></p>
                 </div>
               </div>
             </div>
@@ -40,17 +40,17 @@
           <!-- about -->
           <section id="home-about">
             <!-- swirl -->
-            <div class="container swirl"><div class="row"><div class="col-12"> <img class="swirl" src="/img/swirl-1.svg" ></div></div></div>
+            <div class="container swirl"><div class="row"><div class="col-12"> <img class="swirl" src="{{.Site.BaseURL}}img/swirl-1.svg" ></div></div></div>
             <div class="container">
               <div class="row align-items-center">
                 <div class="col-12 col-lg-4">
                   <p>{{.Params.description}}</p><div id="desc-target"></div>
                 </div>
                 <div class="col-12 col-lg-4 text-center">
-                  <p class="aboutlink">{{ with .Site.GetPage "about"}}<a class="homelink" href="{{ .RelPermalink }}"><span id="about-target"></span>{{.Title}}<span id="about-target-end"></span></a>{{end}}</p>
+                  <p class="aboutlink">{{ with .Site.GetPage "about"}}<a class="homelink" href="{{ .Permalink }}"><span id="about-target"></span>{{.Title}}<span id="about-target-end"></span></a>{{end}}</p>
                 </div>
                 <div class="col-12 col-lg-4 text-right">
-                  <p class="messlink">{{ with .Site.GetPage "messages"}}<a class="homelink" href="{{ .RelPermalink }}"><span id="chair-target"></span>{{.Title}}</a>{{end}}</p>
+                  <p class="messlink">{{ with .Site.GetPage "messages"}}<a class="homelink" href="{{ .Permalink }}"><span id="chair-target"></span>{{.Title}}</a>{{end}}</p>
                 </div>
               </div>
             </div>
@@ -61,13 +61,13 @@
               <div class="row align-items-center">
                 <div class="col-12 col-lg-8">
                   <p class="stat-title">Project distribution map – Indonesia & Australia</p>
-                  <img data-sal="slide-right" data-sal-delay="200" data-sal-duration="600" class="map" src="/img/graph-icons/map.svg">
+                  <img data-sal="slide-right" data-sal-delay="200" data-sal-duration="600" class="map" src="{{.Site.BaseURL}}img/graph-icons/map.svg">
                 </div>
                 <div class="col-12 col-lg-4">
                   <div data-sal="slide-left" data-sal-duration="600" class="statsbox row justify-content-center align-items-center">
                     <div class="col-12 stat-box-title"><p>Completed Projects</p></div>
                     {{ range sort .Site.Data.homestats }}
-                    <div  class="col-2 p-0 text-center"><img  src="/img/graph-icons/{{.icon}}"></div>
+                    <div  class="col-2 p-0 text-center"><img  src="{{.Site.BaseURL}}img/graph-icons/{{.icon}}"></div>
                     <div  class="col-7 p-0">{{.name}}</div>
                     <div  class="col-3 number p-0">{{.num}}</div>
                     <div  class="box-border"></div>
@@ -78,11 +78,11 @@
               <div class="row justify-content-between">
                 <div class="col-lg-6">
                   <p class="stat-title">Project distribution map – Indonesia & Australia</p>
-                  <img data-sal="slide-up"  data-sal-duration="600" class="people" src="/img/graph-icons/people.svg">
+                  <img data-sal="slide-up"  data-sal-duration="600" class="people" src="{{.Site.BaseURL}}img/graph-icons/people.svg">
                 </div>
                 <div class="col-lg-4">
                   <p class="stat-title pb-5">Project distribution map – Indonesia & Australia</p>
-                  <img data-sal="slide-up" data-sal-delay="200"  data-sal-duration="600" class="countries" src="/img/graph-icons/countries.svg">
+                  <img data-sal="slide-up" data-sal-delay="200"  data-sal-duration="600" class="countries" src="{{.Site.BaseURL}}img/graph-icons/countries.svg">
                 </div>
               </div>
             </div>
@@ -95,7 +95,7 @@
                   <h2 class="serif-head">Research</h2>
                   <ul>
                     {{ range sort (where .Site.RegularPages "Section" "research") "Params.order" }}
-                    <li onClick="document.location.href='{{ .RelPermalink }}';"><a href="{{ .RelPermalink }}"><span class="res-targets" id="{{ substr (urlize .Title) 0 3 }}-target"></span>{{.Title}}</a>
+                    <li onClick="document.location.href='{{ .Permalink }}';"><a href="{{ .Permalink }}"><span class="res-targets" id="{{ substr (urlize .Title) 0 3 }}-target"></span>{{.Title}}</a>
                       <div class='circle-bg'>
                       </div></li>
                     {{ end }}
@@ -107,14 +107,14 @@
           <!-- attitudes -->
           <section id="home-att">
             
-            <div class="container swirl"><div class="row"><div class="col-12"> <img class="swirl" src="/img/swirl-1.svg" ></div></div></div>
+            <div class="container swirl"><div class="row"><div class="col-12"> <img class="swirl" src="{{.Site.BaseURL}}img/swirl-1.svg" ></div></div></div>
             <div class="container">
               <div class="row align-items-center">
                 
                 <div class="col-12 col-lg-5">
                   {{ with .Site.GetPage "attitudes"}}
                   <h2 class="serif-head">{{.Title}}</h2>
-                  <p class="text-right att-link"><a href="{{ .RelPermalink }}" class="homelink"><span id="how-target"></span>See How</a></p>
+                  <p class="text-right att-link"><a href="{{ .Permalink }}" class="homelink"><span id="how-target"></span>See How</a></p>
                   <p>{{.Params.description}}</p><div id="att-target"></div>
                   {{end}}
                 </div>
@@ -128,7 +128,7 @@
                 <div class="col-12 col-lg-5 text-right">
                   {{ with .Site.GetPage "relationships"}}
                   <h2 class="serif-head">{{.Title}}</h2>
-                  <p class="text-left rel-link"><a href="{{ .RelPermalink }}" class="homelink rightlink">Learn More<span id="more-target"></span></a></p>
+                  <p class="text-left rel-link"><a href="{{ .Permalink }}" class="homelink rightlink">Learn More<span id="more-target"></span></a></p>
                   <p>{{.Params.description}}</p><div id="rel-target"></div>
                   {{end}}
                 </div>

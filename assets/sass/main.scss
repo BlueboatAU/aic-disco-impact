@@ -174,7 +174,7 @@ a{
 	z-index: 100;
 	position: relative;
 		min-height: unset !important;
-		background: url("/img/home-hero-bg.jpg") no-repeat center center fixed;
+		background: url("http://sail1261.com/aic1418/img/home-hero-bg.jpg") no-repeat center center fixed;
 		 -webkit-background-size: cover;
 		  -moz-background-size: cover;
 		  -o-background-size: cover;
@@ -233,7 +233,7 @@ a{
 		   border:1px solid $gold;
 		   background-color: $white;
 		   margin-left: 10px;
-		   transform: translateY(0.2rem);
+		   transform: translateY(0.36rem);
 		   transition:all 0.2s ease;
 			}
 		}
@@ -249,7 +249,7 @@ a{
 		   border:1px solid $gold;
 		   background-color: $white;
 		   margin-right: 10px;
-		   transform: translateY(0.2rem);
+		   transform: translateY(0.36rem);
 		   transition:all 0.2s ease;
 	}
 	&:hover{

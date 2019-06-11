@@ -8,13 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
    <!-- stylesheets -->
   {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}" type="text/css">
+  <link rel="stylesheet" href="{{ $style.Permalink }}" type="text/css">
   <!-- js -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   {{ $js := resources.Get "js/bootstrap.bundle.min.js" | resources.Minify | resources.Fingerprint }}
   {{ $jsmain:= resources.Get "js/main.js" | resources.Minify | resources.Fingerprint }}
-   <script src="{{ $js.RelPermalink }}"></script>
-   <script src="{{ $jsmain.RelPermalink }}"></script>
+   <script src="{{ $js.Permalink }}"></script>
+   <script src="{{ $jsmain.Permalink }}"></script>
   <!-- fonts -->
    <link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Libre+Franklin:300,400,400i,600,600i&display=swap" rel="stylesheet">
 </head>
@@ -35,17 +35,17 @@
       <body >
        <!-- nav -->
         <div id="indexnav" class="list-group shown">
-          <a class="list-group-item" href="/">Home</a>
-          <a class='list-group-item {{ if eq .File.LogicalName "about.md" }}active{{end}}' href="/about">About AIC</a>
-          <a class='list-group-item {{ if eq .File.LogicalName "messages.md" }}active{{end}}' href="/messages">Messages</a>
-          <a class='list-group-item {{ if eq .Section "research" }}active{{end}}' href="/#home-res">Research</a> 
+          <a class="list-group-item" href="{{.Site.BaseURL}}">Home</a>
+          <a class='list-group-item {{ if eq .File.LogicalName "about.md" }}active{{end}}' href="{{.Site.BaseURL}}about">About AIC</a>
+          <a class='list-group-item {{ if eq .File.LogicalName "messages.md" }}active{{end}}' href="{{.Site.BaseURL}}messages">Messages</a>
+          <a class='list-group-item {{ if eq .Section "research" }}active{{end}}' href="{{.Site.BaseURL}}#home-res">Research</a> 
             <ul class='{{ if ne .Section "research" }}d-none{{end}}'>
               {{ range sort (where .Site.RegularPages "Section" "research") "Params.order" }}
-              <li><a href="{{ .RelPermalink }}" class=''>{{.Title}}</a></li>
+              <li><a href="{{ .Permalink }}" class=''>{{.Title}}</a></li>
               {{ end }}
             </ul>
-          <a class='list-group-item {{ if eq .File.LogicalName "attitudes.md" }}active{{end}}' href="/attitudes">Attitudes</a>
-          <a class='list-group-item {{ if eq .File.LogicalName "relationships.md" }}active{{end}}' href="/relationships">Relationships</a>
+          <a class='list-group-item {{ if eq .File.LogicalName "attitudes.md" }}active{{end}}' href="{{.Site.BaseURL}}attitudes">Attitudes</a>
+          <a class='list-group-item {{ if eq .File.LogicalName "relationships.md" }}active{{end}}' href="{{.Site.BaseURL}}relationships">Relationships</a>
           
         </div>
       {{ end }}
@@ -76,14 +76,14 @@
               <div class="row">
                 <div class="col-12 text-center">
                   <p>An Initiative Of</p>
-                  <img src="/img/partners/partners-1.svg">
+                  <img class="lazyload" data-src="{{.Site.BaseURL}}img/partners/partners-1.svg">
                   <p>In Collaboration With</p>
-                  <img class="pr-5" src="/img/partners/partners-2.svg">
-                  <img src="/img/partners/partners-3.svg">
+                  <img class="pr-5 lazyload" data-src="{{.Site.BaseURL}}img/partners/partners-2.svg">
+                  <img class="lazyload" data-src="{{.Site.BaseURL}}img/partners/partners-3.svg">
                   <p>Supported By</p>
-                  <img src="/img/partners/partners-4.svg">
+                  <img class="lazyload" data-src="{{.Site.BaseURL}}img/partners/partners-4.svg">
                   <p>With Corporate Partners</p>
-                  <img src="/img/partners/partners-5.svg">
+                  <img class="lazyload" data-src="{{.Site.BaseURL}}img/partners/partners-5.svg">
                 </div>
               </div>
             </div>
