@@ -8,7 +8,7 @@ order: "5"
 
 ## Improving productivity of farmers.
 
-The Food and Agriculture Cluster’s work was highlighted by the groundbreaking project ‘Sustainability and profitability of cocoabased farming in Sulawesi’. Researchers from Universitas Hasanuddin, the University of Sydney and Institut Pertanian Bogor took interdisciplinary research to a new level, ultimately providing many lessons in research practice on top of their core findings.
+The Food and Agriculture Cluster’s work was highlighted by the groundbreaking project ‘Sustainability and profitability of cocoabased farming in Sulawesi’. Researchers from Universitas Hasanuddin, the University of Sydney and Institut Pertanian Bogor took interdisciplinary research to a new level, ultimately providing many lessons in research practice on top of their core findings.<!--more-->
 
 ## KEY ACHIEVEMENTS 
 1. Three stakeholder workshops were held in Sulawesi, and all received positive feedback on the use of integrated, multidisciplinary approaches to finding solutions. Stakeholders from the district government’s health and agricultural sectors, the cocoa industry, farmer organisations, senior vets and university academics attended the workshops. A new, integrated approach to address farmers’ livelihood concerns was developed. 

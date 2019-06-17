@@ -8,8 +8,8 @@ order: "1"
 
 ## Affordable, sustainable energy for all – transforming electricity supply in Australia and Indonesia.
 
-The Energy Cluster asked the question, ‘What is the best way to transition from fossil fuels to the energy sources of the future?’ Its particular focus was remote and rural Indonesia, where about 67 million people are living off thegrid, either using expensive, non-renewable
-power such as diesel or going without altogether.
+The Energy Cluster asked the question, ‘What is the best way to transition from fossil fuels to the energy sources of the future?’ Its particular focus was remote and rural Indonesia, where about 67 million people are living off thegrid, either using expensive, non-renewable power such as diesel or going without altogether.<!--more-->
+
 Australia, too, has many remote Indigenous, mining and small-island communities.
 
 ## KEY ACHIEVEMENTS

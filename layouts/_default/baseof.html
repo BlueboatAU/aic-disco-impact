@@ -21,7 +21,7 @@
 
 
     {{ if .IsHome }}
-    <body data-spy="scroll" data-target="#indexnav,#mobnav" data-offset="50" >
+    <body data-spy="scroll" data-target="#indexnav" data-offset="50" >
          <!-- nav -->
         <div id="indexnav" class="list-group"  data-spy="affix" data-offset-top="205">
           <a class="list-group-item" href="#home-about">About AIC</a>
@@ -53,7 +53,7 @@
           <a class="list-group-item" href="{{.Site.BaseURL}}">Home</a>
           <a class='list-group-item {{ if eq .File.LogicalName "about.md" }}active{{end}}' href="{{.Site.BaseURL}}about">About AIC</a>
           <a class='list-group-item {{ if eq .File.LogicalName "messages.md" }}active{{end}}' href="{{.Site.BaseURL}}messages">Messages</a>
-          <a class='list-group-item {{ if eq .Section "research" }}active{{end}}' href="{{.Site.BaseURL}}#home-res">Research</a> 
+          <a class='list-group-item {{ if eq .Section "research" }}active{{end}}' href="{{.Site.BaseURL}}research">Research</a> 
             <ul class='{{ if ne .Section "research" }}d-none{{end}}'>
               {{ range sort (where .Site.RegularPages "Section" "research") "Params.order" }}
               <li><a href="{{ .Permalink }}" class=''>{{.Title}}</a></li>
@@ -73,7 +73,7 @@
         <a class="list-group-item" href="{{.Site.BaseURL}}">Home</a>
           <a class='list-group-item {{ if eq .File.LogicalName "about.md" }}active{{end}}' href="{{.Site.BaseURL}}about">About AIC</a>
           <a class='list-group-item {{ if eq .File.LogicalName "messages.md" }}active{{end}}' href="{{.Site.BaseURL}}messages">Messages</a>
-          <a class='list-group-item {{ if eq .Section "research" }}active{{end}}' href="{{.Site.BaseURL}}#home-res">Research</a> 
+          <a class='list-group-item {{ if eq .Section "research" }}active{{end}}' href="{{.Site.BaseURL}}research">Research</a> 
             <ul class='{{ if ne .Section "research" }}d-none{{end}}'>
               {{ range sort (where .Site.RegularPages "Section" "research") "Params.order" }}
               <li><a href="{{ .Permalink }}" class=''>{{.Title}}</a></li>
@@ -113,7 +113,7 @@
                   <p>An Initiative Of</p>
                   <img class="lazyload" data-src="{{.Site.BaseURL}}img/partners/partners-1.svg">
                   <p>In Collaboration With</p>
-                  <img class="pr-5 lazyload" data-src="{{.Site.BaseURL}}img/partners/partners-2.svg">
+                  <img class="pr-lg-5 lazyload" data-src="{{.Site.BaseURL}}img/partners/partners-2.svg">
                   <img class="lazyload" data-src="{{.Site.BaseURL}}img/partners/partners-3.svg">
                   <p>Supported By</p>
                   <img class="lazyload" data-src="{{.Site.BaseURL}}img/partners/partners-4.svg">

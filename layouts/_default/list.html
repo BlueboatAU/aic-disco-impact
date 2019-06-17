@@ -1,6 +1,38 @@
 {{ define "main" }}
 
-<h2>{{ .Title }}</h2>
-    {{ .Content }}
+
+<svg class="linesvg">
+  <line class="drawnline  mobline" id="intline" />
+ </svg>
+
+ <div class="body-sans-lines">
+
+	{{ partial "int-hero" . }}
+
+<section id="int-wrap" class="list-page">
+	<div class="container">
+              <div class="row align-items-center">
+                <div class="col-12 col-xl-6 col-lg-8">
+                	<h1 class="serif-head">{{ .Title }}</h1>
+                	<div id="top-target"></div>
+    			{{ range first 4 (sort (where .Site.RegularPages "Section" "research") "Params.order") }}
+    			<a href="{{.RelPermalink}}">
+    				<h2>{{.Title}}</h2>
+    				<p>{{ .Summary | plainify }}</p>
+    			</a>
+    			{{end}}
+    			<div id="bot-target"></div>
+    			{{ range last 1 (sort (where .Site.RegularPages "Section" "research") "Params.order") }}
+    			<a href="{{.RelPermalink}}">
+    				<h2>{{.Title}}</h2>
+    				<p>{{ .Summary | plainify }}</p>
+    			</a>
+    			{{end}}
+                </div>
+            </div>
+        </div>
+
+</section>
+
 
 {{end}}

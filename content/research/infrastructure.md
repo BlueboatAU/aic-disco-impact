@@ -8,7 +8,7 @@ order: "2"
 
 ## Supporting sustainable, resilient ports and cities.
 
-The Australia-Indonesia Centre Infrastructure Cluster investigated the built, political, social and natural environments of Indonesia’s ports and transport networks. Its research will help ensure that the many large-scale maritime and land transport infrastructure projects in the pipeline will be resilient, efficient, and able to support the massive economic growth Indonesia is experiencing.
+The Australia-Indonesia Centre Infrastructure Cluster investigated the built, political, social and natural environments of Indonesia’s ports and transport networks. Its research will help ensure that the many large-scale maritime and land transport infrastructure projects in the pipeline will be resilient, efficient, and able to support the massive economic growth Indonesia is experiencing.<!--more-->
 
 ## KEY ACHIEVEMENTS
 1. Developing a fibre-optic sensor for pipeline monitoring, predictive models of train dynamics and bridge life expectancy, a hybrid framework for the non-destructive testing of infrastructure, a dataset of container logistics in Indonesia, and container logistics simulation software.

@@ -72,6 +72,7 @@ function drawTheLines(){
     //about lines
   drawLine('desc-target', 'about-target', 'aboutline');
   drawLine('about-target-end', 'chair-target', 'chairline');
+  drawLine('about-target', 'chair-target-end', 'm-aboutline');
   //res lines
   drawLine('ene-target', 'inf-target', 'eneline');
   drawLine('inf-target', 'urb-target', 'infline');
@@ -106,7 +107,7 @@ window.onload = function() {
   var $hamburger = $(".hamburger");
   var $nav = $("#mobnav");
   var $bg = $("#nav-bg");
-  var $buttons = $(".list-group-item");
+  var $buttons = $("#mobnav .list-group-item");
   $hamburger.add($bg).on("click", function(e) {
     $hamburger.toggleClass("is-active");
     $nav.toggleClass("shown");

@@ -3,21 +3,23 @@
  <!-- lines to draw -->
 <svg class="linesvg">
   <line class="drawnline" id="aboutline" /><line class="drawnline" id="chairline" />
-    <line class="drawnline" id="eneline" /><line class="drawnline" id="infline" />
-      <line class="drawnline" id="urbline" /><line class="drawnline" id="healine" />
+    <line class="drawnline mobline" id="eneline" /><line class="drawnline mobline" id="infline" />
+      <line class="drawnline mobline" id="urbline" /><line class="drawnline mobline" id="healine" />
         <line class="drawnline" id="attline" /><line class="drawnline" id="relline" />
-        <circle id="enecircle" r="8" class="drawnline" />
-        <svg id="enearrow" class="drawnline"><polyline points="1.16 0.29 2.87 7.14 9.72 5.43"/></svg>
+
+        <circle id="enecircle" r="8" class="drawnline mobline" />
+        <svg id="enearrow" class="drawnline mobline"><polyline points="1.16 0.29 2.87 7.14 9.72 5.43"/></svg>
         
-        <circle id="infcircle" r="8" class="drawnline" />
-        <svg id="infarrow" class="drawnline"><polyline points="1.16 0.29 2.87 7.14 9.72 5.43"/></svg>
+        <circle id="infcircle" r="8" class="drawnline mobline" />
+        <svg id="infarrow" class="drawnline mobline"><polyline points="1.16 0.29 2.87 7.14 9.72 5.43"/></svg>
         
-        <circle id="urbcircle" r="8" class="drawnline" />
-        <svg id="urbarrow" class="drawnline"><polyline points="1.16 0.29 2.87 7.14 9.72 5.43"/></svg>
+        <circle id="urbcircle" r="8" class="drawnline mobline" />
+        <svg id="urbarrow" class="drawnline mobline"><polyline points="1.16 0.29 2.87 7.14 9.72 5.43"/></svg>
         
-        <circle id="heacircle" r="8" class="drawnline" />
-        <svg id="heaarrow" class="drawnline"><polyline points="1.16 0.29 2.87 7.14 9.72 5.43"/></svg>
-        </svg>
+        <circle id="heacircle" r="8" class="drawnline mobline" />
+        <svg id="heaarrow" class="drawnline mobline"><polyline points="1.16 0.29 2.87 7.14 9.72 5.43"/></svg>
+        <!-- mob lines -->
+  </svg>
 
           
 
@@ -39,18 +41,18 @@
 
           <!-- about -->
           <section id="home-about">
-            <!-- swirl -->
-            <div class="container swirl"><div class="row"><div class="col-12"> <img class="swirl" src="{{.Site.BaseURL}}img/swirl-1.svg" ></div></div></div>
+            <!-- swirl 
+            <div class="container swirl"><div class="row"><div class="col-12"> <img class="swirl" src="{{.Site.BaseURL}}img/swirl-1.svg" ></div></div></div>-->
             <div class="container">
-              <div class="row align-items-center">
+              <div class="row align-items-center swirlbg">
                 <div class="col-12 col-lg-4">
                   <p>{{.Params.description}}</p><div id="desc-target"></div>
                 </div>
-                <div class="col-12 col-lg-4 text-center">
+                <div class="col-12 col-lg-4 text-lg-center text-right">
                   <p class="aboutlink">{{ with .Site.GetPage "about"}}<a class="homelink" href="{{ .Permalink }}"><span id="about-target"></span>{{.Title}}<span id="about-target-end"></span></a>{{end}}</p>
                 </div>
-                <div class="col-12 col-lg-4 text-right">
-                  <p class="messlink">{{ with .Site.GetPage "messages"}}<a class="homelink" href="{{ .Permalink }}"><span id="chair-target"></span>{{.Title}}</a>{{end}}</p>
+                <div class="col-12 col-lg-4 text-lg-right text-left">
+                  <p class="messlink">{{ with .Site.GetPage "messages"}}<a class="homelink" href="{{ .Permalink }}"><span id="chair-target"></span>{{.Title}}<span id="chair-target-end"></span></a>{{end}}</p>
                 </div>
               </div>
             </div>
@@ -63,7 +65,7 @@
                   <p class="stat-title">Project distribution map – Indonesia & Australia</p>
                   <img data-sal="slide-up" data-sal-delay="200" data-sal-duration="600" class="map" src="{{.Site.BaseURL}}img/graph-icons/map.svg">
                 </div>
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4 statswrap">
                   <div data-sal="slide-up" data-sal-duration="600" class="statsbox row justify-content-center align-items-center">
                     <div class="col-12 stat-box-title"><p>Completed Projects</p></div>
                     {{ range sort .Site.Data.homestats }}
@@ -107,9 +109,9 @@
           <!-- attitudes -->
           <section id="home-att">
             
-            <div class="container swirl"><div class="row"><div class="col-12"> <img class="swirl" src="{{.Site.BaseURL}}img/swirl-1.svg" ></div></div></div>
+           <!-- <div class="container swirl"><div class="row"><div class="col-12"> <img class="swirl" src="{{.Site.BaseURL}}img/swirl-1.svg" ></div></div></div>-->
             <div class="container">
-              <div class="row align-items-center">
+              <div class="row align-items-center swirlbg">
                 
                 <div class="col-12 col-lg-5">
                   {{ with .Site.GetPage "attitudes"}}

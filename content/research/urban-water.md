@@ -9,7 +9,7 @@ order: "3"
 
 ## Developing advanced pathways towards water-sensitive cities.
 
-The Urban Water Cluster research program aimed to achieve a detailed understanding of the water systems of Bogor City and Bogor Regency, and to explore their potential to leapfrog to a water-sensitive future through sociopolitical and biophysical pathways.
+The Urban Water Cluster research program aimed to achieve a detailed understanding of the water systems of Bogor City and Bogor Regency, and to explore their potential to leapfrog to a water-sensitive future through sociopolitical and biophysical pathways.<!--more-->
 
 ## KEY ACHIEVEMENTS 
 1. Through three co-design workshops in Melbourne and three in Bogor, the cluster research partnership between Monash, Universitas Indonesia and Institut Pertanian Bogor evolved and strengthened over the two-year research program. 

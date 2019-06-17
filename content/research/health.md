@@ -8,7 +8,7 @@ order: "4"
 
 ## Innovative approaches to address primary prevention of Non-Communicable Diseases.
 
-Maintaining the health and wellbeing of young people is of paramount importance to a society’s sustainable growth and advancement. Investing in human capital should always go hand-inhand with the building of infrastructure and markets, and will be the key to Indonesia’s success in this century; it will be just as vital for Australia’s continued growth.
+Maintaining the health and wellbeing of young people is of paramount importance to a society’s sustainable growth and advancement. Investing in human capital should always go hand-inhand with the building of infrastructure and markets, and will be the key to Indonesia’s success in this century; it will be just as vital for Australia’s continued growth.<!--more-->
 
 ## KEY ACHIEVEMENTS 
 1. Creating a detailed Indonesian energy technology assessment (IETA) projecting the future cost of generating power via different technologies. The report will help planners and policymakers make informed decisions about the future of Indonesia’s energy network. It was presented at a forum at the Australian Embassy Jakarta in 2018.
