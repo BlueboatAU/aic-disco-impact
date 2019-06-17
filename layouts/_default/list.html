@@ -18,14 +18,14 @@
     			{{ range first 4 (sort (where .Site.RegularPages "Section" "research") "Params.order") }}
     			<a href="{{.RelPermalink}}">
     				<h2>{{.Title}}</h2>
-    				<p>{{ .Summary | plainify }}</p>
+    				<p>{{ .Summary | plainify }}  <span>Read More →</span></p>
     			</a>
     			{{end}}
     			<div id="bot-target"></div>
     			{{ range last 1 (sort (where .Site.RegularPages "Section" "research") "Params.order") }}
     			<a href="{{.RelPermalink}}">
     				<h2>{{.Title}}</h2>
-    				<p>{{ .Summary | plainify }}</p>
+    				<p>{{ .Summary | plainify }}  <span>Read More →</span></p>
     			</a>
     			{{end}}
                 </div>

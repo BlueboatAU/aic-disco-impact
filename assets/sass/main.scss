@@ -359,7 +359,7 @@ a{
 	}
 
 	.homelink{
-		text-decoration: none;
+		text-decoration: underline;
 		
 		&.rightlink{
 			&::before{
@@ -433,10 +433,13 @@ a{
 		padding-bottom: 20px;
 	}
 	.map{
-	max-width: 600px;
+	max-width: 550px;
     width: 100%;
+    padding-right: 40px;
 	}
-	.statswrap{border: 10px solid white;}
+	.statswrap{
+		border: 10px solid white;
+	}
 	.statsbox{
 		padding:0px;
 		background:$l-gray;
@@ -444,6 +447,8 @@ a{
 			font-family: $fontserif;
 			text-transform: uppercase;
 			font-weight: bold;
+			    margin-top: 0;
+    margin-bottom: 0;
 			.stat-box-title{
 				font-weight: normal;
 			color: $d-black;
@@ -689,14 +694,8 @@ a{
 //Internal Page Styles
 
 #int-hero{
-	z-index: 100;
 	position: relative;
-		min-height: unset !important;
-		
-		 -webkit-background-size: cover;
-		  -moz-background-size: cover;
-		  -o-background-size: cover;
-		  background-size: cover;
+	min-height: unset !important;
 	.container-fluid{
 			padding: 20px 35px;
 			.row{
@@ -733,24 +732,36 @@ a{
 	}
 	@media(max-width: 768px){
 		h2{
-			top:139px;
+			top:28px;
 			span{
 
 			}
 		}
 		p{
-			font-size: 10em;
-		
+			font-size: 5em;
+			opacity: 0.07;
 		span{
-			display: block;
-			padding-left:unset; 
+			display: inline;
+			padding-left:20px; 
 			}
 		}
 		img{
 		height:50px;
-		transform: translate(-20px, -30px);
+		transform: translate(-120px, -55px);
 		position: absolute;
 	}
+	}
+	.swirlbg{
+		&::before{
+		height: 50vh;
+	    top: -15vh;
+	    	@media (max-width: 992px) {
+	    		
+	    	}
+	    	@media (max-width: 768px) {
+	    	height: 60vh;	
+	    	}
+		}
 	}
 }
 
@@ -830,6 +841,9 @@ a{
 		}
 		p{
 			transition:all 0.2s ease;
+			span{
+				text-decoration: underline;
+			}
 		}
 	}
 }

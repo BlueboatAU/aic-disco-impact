@@ -65,7 +65,7 @@
                   <p class="stat-title">Project distribution map – Indonesia & Australia</p>
                   <img data-sal="slide-up" data-sal-delay="200" data-sal-duration="600" class="map" src="{{.Site.BaseURL}}img/graph-icons/map.svg">
                 </div>
-                <div class="col-12 col-lg-4 statswrap">
+                <div class="col-12 col-lg-4 statswrap mt-5 mt-lg-0">
                   <div data-sal="slide-up" data-sal-duration="600" class="statsbox row justify-content-center align-items-center">
                     <div class="col-12 stat-box-title"><p>Completed Projects</p></div>
                     {{ range sort .Site.Data.homestats }}
@@ -116,8 +116,9 @@
                 <div class="col-12 col-lg-5">
                   {{ with .Site.GetPage "attitudes"}}
                   <h2 class="serif-head mb-pt">{{.Title}}</h2>
-                  <p class="text-right att-link"><a href="{{ .Permalink }}" class="homelink"><span id="how-target"></span>See How</a></p>
+                  <p class="text-right att-link d-none d-lg-block"><a href="{{ .Permalink }}" class="homelink"><span id="how-target"></span>See How</a></p>
                   <p>{{.Params.description}}</p><div id="att-target"></div>
+                  <p class="text-right att-link d-lg-none"><a href="{{ .Permalink }}" class="homelink">See How</a></p>
                   {{end}}
                 </div>
               </div>
@@ -130,8 +131,9 @@
                 <div class="col-12 col-lg-5 text-right">
                   {{ with .Site.GetPage "relationships"}}
                   <h2 class="serif-head">{{.Title}}</h2>
-                  <p class="text-left rel-link"><a href="{{ .Permalink }}" class="homelink rightlink">Learn More<span id="more-target"></span></a></p>
+                  <p class="text-left rel-link d-none d-lg-block"><a href="{{ .Permalink }}" class="homelink rightlink">Learn More<span id="more-target"></span></a></p>
                   <p>{{.Params.description}}</p><div id="rel-target"></div>
+                  <p class="text-left rel-link d-lg-none"><a href="{{ .Permalink }}" class="homelink rightlink">Learn More</a></p>
                   {{end}}
                 </div>
               </div>
