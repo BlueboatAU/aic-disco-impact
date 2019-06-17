@@ -1,7 +1,7 @@
 ---
 
 title: "Attitudes"
-description: "One of the centre’s core objectives would be to improve Australians’ understanding and appreciation of contemporary Indonesia and, likewise, Indonesians’ understanding and appreciation of contemporary Australia"
+summary: "One of the centre’s core objectives would be to improve Australians’ understanding and appreciation of contemporary Indonesia and, likewise, Indonesians’ understanding and appreciation of contemporary Australia"
 
 ---
 

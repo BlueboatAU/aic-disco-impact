@@ -46,7 +46,7 @@
             <div class="container">
               <div class="row align-items-center swirlbg">
                 <div class="col-12 col-lg-4">
-                  <p>{{.Params.description}}</p><div id="desc-target"></div>
+                  <p>{{.Summary}}</p><div id="desc-target"></div>
                 </div>
                 <div class="col-12 col-lg-4 text-lg-center text-right">
                   <p class="aboutlink">{{ with .Site.GetPage "about"}}<a class="homelink" href="{{ .Permalink }}"><span id="about-target"></span>{{.Title}}<span id="about-target-end"></span></a>{{end}}</p>
@@ -117,7 +117,7 @@
                   {{ with .Site.GetPage "attitudes"}}
                   <h2 class="serif-head mb-pt">{{.Title}}</h2>
                   <p class="text-right att-link d-none d-lg-block"><a href="{{ .Permalink }}" class="homelink"><span id="how-target"></span>See How</a></p>
-                  <p>{{.Params.description}}</p><div id="att-target"></div>
+                  <p>{{.Summary}}</p><div id="att-target"></div>
                   <p class="text-right att-link d-lg-none"><a href="{{ .Permalink }}" class="homelink">See How</a></p>
                   {{end}}
                 </div>
@@ -132,7 +132,7 @@
                   {{ with .Site.GetPage "relationships"}}
                   <h2 class="serif-head">{{.Title}}</h2>
                   <p class="text-left rel-link d-none d-lg-block"><a href="{{ .Permalink }}" class="homelink rightlink">Learn More<span id="more-target"></span></a></p>
-                  <p>{{.Params.description}}</p><div id="rel-target"></div>
+                  <p>{{.Summary}}</p><div id="rel-target"></div>
                   <p class="text-left rel-link d-lg-none"><a href="{{ .Permalink }}" class="homelink rightlink">Learn More</a></p>
                   {{end}}
                 </div>
