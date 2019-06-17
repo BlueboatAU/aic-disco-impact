@@ -21,7 +21,7 @@
 
 
     {{ if .IsHome }}
-    <body data-spy="scroll" data-target="#indexnav" data-offset="50" >
+    <body data-spy="scroll" data-target="#indexnav,#mobnav" data-offset="50" >
          <!-- nav -->
         <div id="indexnav" class="list-group"  data-spy="affix" data-offset-top="205">
           <a class="list-group-item" href="#home-about">About AIC</a>
@@ -31,6 +31,21 @@
           <a class="list-group-item" href="#home-rels">Relationships</a>
           <a class="list-group-item" href="#home-part">Partners</a>
         </div>
+        <!-- mob nav -->
+      <button id="mobnav-button" class="hamburger hamburger--collapse" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <div id="mobnav" class="list-group" data-spy="affix" data-offset-top="205">
+          <a class="list-group-item" href="#home-about">About AIC</a>
+          <a class="list-group-item" href="#home-stats">Statistics</a>
+          <a class="list-group-item" href="#home-res">Research</a>
+          <a class="list-group-item" href="#home-att">Attitudes</a>
+          <a class="list-group-item" href="#home-rels">Relationships</a>
+          <a class="list-group-item" href="#home-part">Partners</a>
+        </div>
+        <div id="nav-bg"></div>
       {{ else }}
       <body >
        <!-- nav -->
@@ -46,8 +61,28 @@
             </ul>
           <a class='list-group-item {{ if eq .File.LogicalName "attitudes.md" }}active{{end}}' href="{{.Site.BaseURL}}attitudes">Attitudes</a>
           <a class='list-group-item {{ if eq .File.LogicalName "relationships.md" }}active{{end}}' href="{{.Site.BaseURL}}relationships">Relationships</a>
-          
         </div>
+
+         <!-- mob nav -->
+      <button id="mobnav-button" class="hamburger hamburger--collapse" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <div id="mobnav" class="list-group">
+        <a class="list-group-item" href="{{.Site.BaseURL}}">Home</a>
+          <a class='list-group-item {{ if eq .File.LogicalName "about.md" }}active{{end}}' href="{{.Site.BaseURL}}about">About AIC</a>
+          <a class='list-group-item {{ if eq .File.LogicalName "messages.md" }}active{{end}}' href="{{.Site.BaseURL}}messages">Messages</a>
+          <a class='list-group-item {{ if eq .Section "research" }}active{{end}}' href="{{.Site.BaseURL}}#home-res">Research</a> 
+            <ul class='{{ if ne .Section "research" }}d-none{{end}}'>
+              {{ range sort (where .Site.RegularPages "Section" "research") "Params.order" }}
+              <li><a href="{{ .Permalink }}" class=''>{{.Title}}</a></li>
+              {{ end }}
+            </ul>
+          <a class='list-group-item {{ if eq .File.LogicalName "attitudes.md" }}active{{end}}' href="{{.Site.BaseURL}}attitudes">Attitudes</a>
+          <a class='list-group-item {{ if eq .File.LogicalName "relationships.md" }}active{{end}}' href="{{.Site.BaseURL}}relationships">Relationships</a>
+        </div>
+        <div id="nav-bg"></div>
       {{ end }}
 
   <!--[if IE]>

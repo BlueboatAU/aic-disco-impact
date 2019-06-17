@@ -16,6 +16,8 @@ $(window).scroll(function() {
     }
 });
 
+
+
 //function that draws the lines
 function drawLine(d1, d2, l){
   let div1 = $(`#${d1}`);
@@ -96,9 +98,29 @@ window.onload = function() {
 
     //draw lines
     drawTheLines();
-    
+    //animations
     sal();
     
+    //hamburger menu
+
+  var $hamburger = $(".hamburger");
+  var $nav = $("#mobnav");
+  var $bg = $("#nav-bg");
+  var $buttons = $(".list-group-item");
+  $hamburger.add($bg).on("click", function(e) {
+    $hamburger.toggleClass("is-active");
+    $nav.toggleClass("shown");
+    $bg.toggleClass("shown");
+  });
+  $buttons.on("click", function(e) {
+      setTimeout(function(){
+      $hamburger.toggleClass("is-active");
+      $nav.toggleClass("shown");
+      $bg.toggleClass("shown");
+      }, 800)
+  });
+
+
     //used for testing ==> console.log(location.pathname);
 
     //smoothscroll
