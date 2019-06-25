@@ -24,6 +24,10 @@ $fade-display:inline-block;
 
 html{
 	font-size: 10px;
+	@media(min-width: 1200px){
+		font-size: 14px;
+	}
+
 }
 
 body{
@@ -41,6 +45,9 @@ a{
 	font-size: 4rem;
 	@media (max-width: 576px) {
 		font-size: 3rem;
+	}
+	@media (min-width: 1200px) {
+		font-size: 3rem !important;
 	}
 }
 .linesvg{
@@ -66,6 +73,11 @@ a{
 				display: inline;
 			}
 		}
+		@media (max-width: 992px) and (min-width: 576px){
+			&.tabline{
+				display: inline;
+			}
+		}
 	}
 	
 }
@@ -77,14 +89,80 @@ a{
 		content: "";
    position: absolute;
     width: 100vw;
-    height: 60vh;
+    height: 70vh;
     top: 0px;
-    left: 0px;
+    left: 0;
    z-index: -1;
    background: url(/aic1418/img/swirl-1.svg);
    background-repeat: no-repeat;
    background-size: auto;
    background-position: center;
+	}
+}
+
+.circle-link{
+		list-style: none;
+		border:2px solid $gold;
+		background: $white;
+		border-radius: 10rem;
+		width:11rem;
+		height:11rem;
+		padding: 10px;
+		text-align: center;
+		text-transform: uppercase;
+		display: table;
+		padding: 0;
+		margin-bottom: 6rem;
+		transition: all 450ms ease;
+		cursor: pointer;
+		a{
+			text-decoration: none;
+			transition: all 200ms ease 0ms;
+			vertical-align: middle;
+			display: table-cell;
+
+		}
+		.circle-bg{
+		position: absolute;
+		opacity: 0;
+		z-index: -1;
+		top: -2px;
+		left: -2px;
+		border-radius: 50%;
+		width: 11rem;
+		height: 11rem;
+		transform: scale(1);
+		background: $gold;
+		transition: all 450ms ease 0ms;
+  	&:after{
+  		position: absolute;
+  		opacity: 0;
+  		   left: 0.3rem;
+    	top: 0.28rem;
+  		content:'';
+  		border-radius: 50%;
+		  width: 10.5rem;
+		  height: 10.5rem;
+		  transform: scale(1);
+			background: $white;
+		  transition: all 450ms ease 0ms;
+  	}
+		}
+		&:hover {
+
+			&> a{
+				text-decoration: none;
+				color: $white;
+			}
+			&> .circle-bg{
+  
+  opacity: 1;
+  &:after{
+  	transform: scale(0);
+  	opacity: 1;
+  }
+		}
+  
 	}
 }
 
@@ -107,7 +185,7 @@ a{
     .list-group-item {
     position: relative;
     display: block;
-    width:120px;
+    width:140px;
     padding: 0.5rem;
     padding-right: 1.5rem;
     margin-bottom: 1px;
@@ -116,9 +194,10 @@ a{
     border: unset;
     border-radius: 0;
     transition:all 0.2s ease;
+    letter-spacing: 1px;
     &.active{
     	background: $gold;
-    	width: 140px;
+    	width: 160px;
     	text-decoration: underline;
     	text-decoration-color:$red;
     }
@@ -195,6 +274,7 @@ a{
     border: unset;
     border-radius: 0;
     transition:all 0.2s ease;
+    letter-spacing: 1px;
     &.active{
     	background: $gold;
     	width: 140px;
@@ -273,7 +353,9 @@ a{
 		z-index: 3;
 		font-size: 1.5rem;
 		font-weight: bold;
-		
+		@media(min-width: 1200px){
+		font-size:15px !important;
+		}
 		span{
 			color:$red;
 		}
@@ -289,6 +371,9 @@ a{
 		span{
 			padding-left: 100px;
 		}
+		@media(min-width: 1200px){
+		font-size:120px !important;
+	}
 	}
 	@media(max-width: 768px){
 		h1{
@@ -320,7 +405,9 @@ a{
 		  background-size: cover;
 	.container-fluid{
 			padding: 20px 35px;
-
+				@media(max-width: 576px){
+					padding: 4vh 6vh;
+				}
 			.row{
 				min-height: 70vh;
 				color:$white;
@@ -328,6 +415,9 @@ a{
 				margin-top: unset;
 				padding-top: 45px;
 				margin-bottom: unset;
+				@media(max-width: 576px){
+					height: 92vh
+				}
 			}
 		}
 	
@@ -352,11 +442,16 @@ a{
 	}
 	.row{
 	min-height: 30vh;
-	margin-top: 60px;
-	margin-bottom: 60px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	@media(min-width: 992px){
+	margin-top: 140px;
+	margin-bottom: 140px;
+	}
 	}
 	p{
 		text-transform: uppercase;
+		 line-height: 1.8rem;
 	}
 
 	.homelink{
@@ -411,21 +506,18 @@ a{
 
 #home-about{
 	.aboutlink{
-	transform: translateY(-50px);
-		@media (max-width: 992px) {
-			transform:none !important;
-	}
+	transform: translate(1vw, 40px);
 	}
 	.messlink{
-	transform: translateY(10px);
-		@media (max-width: 992px) {
-			transform:none !important;
-	}
+	transform: translate(17vw, 10px);
 	}
 	.swirlbg{
-	&::before{
-    top: 55vh;
-	}
+		&::before{
+		top: 50vh;
+		@media(max-width: 576px){
+			top:95vh;
+		}
+		}
 	}
 }
 
@@ -448,8 +540,11 @@ a{
 			font-family: $fontserif;
 			text-transform: uppercase;
 			font-weight: bold;
-			    margin-top: 0;
-    margin-bottom: 0;
+			margin-top: 0;
+    		margin-bottom: 0;
+    		@media(min-width: 1200px){
+    			font-size: 0.9rem;
+    		}
 			.stat-box-title{
 				font-weight: normal;
 			color: $d-black;
@@ -500,70 +595,7 @@ a{
 		display: inline-block;
 	}
 	li{
-		list-style: none;
-		border:2px solid $gold;
-		background: $white;
-		border-radius: 10rem;
-		width:11rem;
-		height:11rem;
-		padding: 10px;
-		text-align: center;
-		text-transform: uppercase;
-		display: table;
-		padding: 0;
-		margin-bottom: 6rem;
-		transition: all 450ms ease;
-		cursor: pointer;
-		a{
-			text-decoration: none;
-			transition: all 200ms ease 0ms;
-			vertical-align: middle;
-			display: table-cell;
-
-		}
-		.circle-bg{
-		position: absolute;
-		opacity: 0;
-		z-index: -1;
-  top: -2px;
-  left: -2px;
-  border-radius: 50%;
-  width: 11rem;
-  height: 11rem;
-  transform: scale(1);
-	background: $gold;
-  transition: all 450ms ease 0ms;
-  	&:after{
-  		position: absolute;
-  		opacity: 0;
-  		   left: 0.3rem;
-    	top: 0.28rem;
-  		content:'';
-  		border-radius: 50%;
-  width: 10.5rem;
-  height: 10.5rem;
-  transform: scale(1);
-	background: $white;
-  transition: all 450ms ease 0ms;
-  	}
-		}
-		&:hover {
-
-			&> a{
-				text-decoration: none;
-				color: $white;
-			}
-			&> .circle-bg{
-  
-  opacity: 1;
-  &:after{
-  	transform: scale(0);
-  	opacity: 1;
-  }
-		}
-  
-	}
-
+		
 		&:last-child{margin-bottom: 0;}
 		&:nth-child(1){
 			transform:translateX(50px);	
@@ -599,28 +631,21 @@ a{
 	}
 }
 #home-att{
-	.row{
-		margin-top: 0;
-	}
-
 	h2{
 		padding-bottom: 20px;
 	}
 	.att-link{
-		transform:translate(150px, -10px);
-	@media (max-width: 992px) {
-			transform:none !important;
-	}
+		transform:translate(170px, -70px);
+		right: 0;
+		margin:0;
+		position: absolute;
+		@media (max-width: 992px) {
+			transform:translate(70px, -120px);
+		}
 	}
 		.swirlbg{
 		&::before{
-	    top: 245vh;
-	    	@media (max-width: 992px) {
-	    		top: 285vh;	
-	    	}
-	    	@media (max-width: 768px) {
-	    		 display: none;	
-	    	}
+	    top: unset;
 		}
 	}
 }
@@ -629,9 +654,11 @@ a{
 		padding-bottom: 20px;
 	}
 	.rel-link{
-		transform:translate(-150px, -10px);
+		margin:0;
+		position: absolute;
+		transform:translate(-180px, -100px);
 		@media (max-width: 992px) {
-			transform:none !important;
+			transform:translate(-80px, -130px);
 		}
 	}
 }
@@ -725,6 +752,9 @@ a{
 		font-size: 1.5rem;
 		font-weight: bold;
 		color: black;
+		@media(min-width: 1200px){
+		font-size:15px !important;
+		}
 		
 		span{
 			color:$red;
@@ -770,18 +800,34 @@ a{
 
 #int-wrap{
 	padding:0 200px;
+	margin-top: -30px;
+	@media(min-width: 1200px){
+		padding: 0 220px;
+	}
 	@media(max-width: 992px){
 		padding: 0;
 		padding-left: 10px;
+		img{
+			padding-right: 10px;
+		}
 	}
 	.row{
-		   margin-bottom: 60px;
+		   margin-bottom: 200px;
 		     z-index: 3;
     		position: relative;
 	}
+	.serif-head{
+		margin:4rem 0;
+	}
+	img{
+		width: 100%;
+	}
 	h2{
 		font-size:1rem;
+		margin:5.5rem 0 1.5rem;
 		text-transform: uppercase;
+		line-height: 1.5rem;
+		letter-spacing: 1px;
 		&::before{
 			   content: '';
 			   display: inline-block;
@@ -797,29 +843,68 @@ a{
 			   transition:all 0.2s ease;
 		}
 	}
+	h3{
+		color: $gold;
+		font-size: 4rem;
+		font-family: $fontserif;
+		font-weight: bold;
+		margin-top: 4rem;
+		@media(min-width: 1200px){
+			height: 3rem;
+			font-size: 3rem;
+		}
+	}
+	h4{
+		font-size:1rem;
+		text-transform: uppercase;
+		line-height: 1.5rem;
+		letter-spacing: 1px;
+	}
 	ol{
 		list-style: none; 
 		counter-reset: li;
-		padding-inline-start: 3rem;
+		padding-inline-start: 0;
+		@media(min-width: 992px){
+			margin-right: 25%;
+		}
 		p{
+			@media(min-width: 1200px){
+				font-size: 12px;
+				line-height: 17px;
+			}
 			counter-increment: li;
 		&::before {
-			content: counter(li)'.'; 
+			content: counter(li); 
 			color: $gold;
-  			display: inline-block;
-  			width:1rem;
-  			margin-left: -3rem;
-  			margin-right: 2rem;
-
+  			display: block;
+  			height: 4rem;
+			font-size: 4rem;
+			padding-top: 1.2rem;
+			font-family: $fontserif;
+			font-weight: bold;
+			@media(min-width: 1200px){
+				height: 3rem;
+				font-size: 3rem;
+			}
   			}
   		}
 	}
 	a{
 		text-decoration: underline;
 		transition:all 0.1s ease;
+		@media(min-width: 1200px){
+				font-size: 12px;
+				line-height: 17px;
+			}
+		@media(min-width: 992px){
+			margin-right: 25%;
+		}
 		&:hover{
 			color: $gold;
 		}
+	}
+	p{
+		line-height: 1.8rem;
 	}
 }
 .list-page{
@@ -836,6 +921,9 @@ a{
 				color: $gold;
 			}
 		}
+		&:first-child{
+			margin-top: 0;
+		}
 		h2{
 			text-decoration: underline;
 			transition:all 0.2s ease;
@@ -845,6 +933,9 @@ a{
 			span{
 				text-decoration: underline;
 			}
+		}
+		@media(min-width: 992px){
+			margin-right: 0 !important;
 		}
 	}
 }

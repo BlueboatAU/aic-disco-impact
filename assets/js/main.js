@@ -69,8 +69,7 @@ function drawTheLines(){
   if(location.pathname === '/aic1418/'){
     //about lines
   drawLine('desc-target', 'about-target', 'aboutline');
-  drawLine('about-target-end', 'chair-target', 'chairline');
-  drawLine('about-target', 'chair-target-end', 'm-aboutline');
+  drawLine('about-target', 'chair-target', 'chairline');
   //res lines
   drawLine('ene-target', 'inf-target', 'eneline');
   drawLine('inf-target', 'urb-target', 'infline');
@@ -81,9 +80,10 @@ function drawTheLines(){
   drawLine('rel-target', 'more-target', 'relline');
   //draw circles
   drawCircle('ene-target', 'inf-target', 'enecircle', 'enearrow');
-   drawCircle('inf-target', 'urb-target', 'infcircle', 'infarrow');
+  drawCircle('inf-target', 'urb-target', 'infcircle', 'infarrow');
   drawCircle('urb-target', 'hea-target', 'urbcircle', 'urbarrow');
   drawCircle('hea-target', 'foo-target', 'heacircle', 'heaarrow');
+  drawCircle('about-target', 'chair-target', 'aboutcircle', 'aboutarrow');
   } else {
       drawLine('top-target', 'bot-target', 'intline');
   }
@@ -127,9 +127,9 @@ window.onload = function() {
     //smoothscroll
     $('.list-group-item').click(function() {
       var sectionTo = $(this).attr('href');
-      console.log('sectionTo')
+      console.log(sectionTo)
       $('html, body').animate({
-        scrollTop: $(sectionTo).offset().top
+        scrollTop: $(sectionTo).offset().top - 20
       }, 800);
   });
 

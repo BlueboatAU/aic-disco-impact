@@ -2,6 +2,7 @@
 
 title: "Urban Water"
 order: "3"
+img: aic-placeholder.jpg
 
 ---
 
@@ -33,6 +34,12 @@ The Urban Water Cluster research program aimed to achieve a detailed understandi
 1. The final Urban Water research report was launched on 4 December at the Urban Water Showcase and Exhibition at IPB International Convention Centre, attended by 120 stakeholders across government, industry, media and community. 
 
 1. The Governor of West Java expressed a strong desire to include advice from the cluster into the new urban design guidelines being developed.
+
+### $2M
+#### Total Investment
+
+### 62
+#### Total Researchers
 
 <div id="bot-target"></div>
 

@@ -2,10 +2,10 @@
 {{ $isHome := true }}
  <!-- lines to draw -->
 <svg class="linesvg">
-  <line class="drawnline" id="aboutline" /><line class="drawnline" id="chairline" />
+  <line class="drawnline tabline" id="aboutline" /><line class="drawnline tabline" id="chairline" />
     <line class="drawnline mobline" id="eneline" /><line class="drawnline mobline" id="infline" />
       <line class="drawnline mobline" id="urbline" /><line class="drawnline mobline" id="healine" />
-        <line class="drawnline" id="attline" /><line class="drawnline" id="relline" />
+        <line class="drawnline tabline" id="attline" /><line class="drawnline tabline" id="relline" />
 
         <circle id="enecircle" r="8" class="drawnline mobline" />
         <svg id="enearrow" class="drawnline mobline"><polyline points="1.16 0.29 2.87 7.14 9.72 5.43"/></svg>
@@ -18,6 +18,9 @@
         
         <circle id="heacircle" r="8" class="drawnline mobline" />
         <svg id="heaarrow" class="drawnline mobline"><polyline points="1.16 0.29 2.87 7.14 9.72 5.43"/></svg>
+
+        <circle id="aboutcircle" r="8" class="drawnline tabline" />
+        <svg id="aboutarrow" class="drawnline tabline"><polyline points="1.16 0.29 2.87 7.14 9.72 5.43"/></svg>
         <!-- mob lines -->
   </svg>
 
@@ -44,15 +47,19 @@
             <!-- swirl 
             <div class="container swirl"><div class="row"><div class="col-12"> <img class="swirl" src="{{.Site.BaseURL}}img/swirl-1.svg" ></div></div></div>-->
             <div class="container">
-              <div class="row align-items-center swirlbg">
-                <div class="col-12 col-lg-4">
+              <div class="row align-items-center justify-content-center swirlbg">
+                <div class="col-12 col-md-6 col-lg-5">
                   <p>{{.Summary}}</p><div id="desc-target"></div>
                 </div>
-                <div class="col-12 col-lg-4 text-lg-center text-right">
-                  <p class="aboutlink">{{ with .Site.GetPage "about"}}<a class="homelink" href="{{ .Permalink }}"><span id="about-target"></span>{{.Title}}<span id="about-target-end"></span></a>{{end}}</p>
-                </div>
-                <div class="col-12 col-lg-4 text-lg-right text-left">
-                  <p class="messlink">{{ with .Site.GetPage "messages"}}<a class="homelink" href="{{ .Permalink }}"><span id="chair-target"></span>{{.Title}}<span id="chair-target-end"></span></a>{{end}}</p>
+                <div class="col-12 col-md-6 col-lg-5">
+                  {{ with .Site.GetPage "about"}}
+                  <li class="aboutlink circle-link d-none d-sm-table" onClick="document.location.href='{{ .Permalink }}';"><a class="" href="{{ .Permalink }}"><span id="about-target" class="res-targets"></span>{{.Title}}</a><div class='circle-bg'></div></li>
+                  <p class="d-md-none"><a href="{{ .Permalink }}" class="homelink">{{.Title}}</a></p>
+                  {{end}}
+                  {{ with .Site.GetPage "messages"}}
+                  <li class="messlink circle-link d-none d-sm-table" onClick="document.location.href='{{ .Permalink }}';"><a class="" href="{{ .Permalink }}"><span id="chair-target" class="res-targets"></span>{{.Title}}</a><div class='circle-bg'></div></li>
+                  <p class="d-md-none text-right"><a href="{{ .Permalink }}" class="homelink rightlink">{{.Title}}</a></p>
+                  {{end}}
                 </div>
               </div>
             </div>
@@ -79,11 +86,11 @@
               </div>
               <div class="row justify-content-between">
                 <div class="col-md-6">
-                  <p class="stat-title">Project distribution map – Indonesia & Australia</p>
+                  <p class="stat-title">Australia-Indonesia researchers 2015-2018</p>
                   <img data-sal="slide-up"  data-sal-duration="600" class="people" src="{{.Site.BaseURL}}img/graph-icons/people.svg">
                 </div>
                 <div class="col-md-4">
-                  <p class="stat-title pb-5 mb-pt">Project distribution map – Indonesia & Australia</p>
+                  <p class="stat-title pb-5 mb-pt">Researchers by Country</p>
                   <img data-sal="slide-up" data-sal-delay="200"  data-sal-duration="600" class="countries" src="{{.Site.BaseURL}}img/graph-icons/countries.svg">
                 </div>
               </div>
@@ -97,9 +104,9 @@
                   <h2 class="serif-head">Research</h2>
                   <ul>
                     {{ range sort (where .Site.RegularPages "Section" "research") "Params.order" }}
-                    <li onClick="document.location.href='{{ .Permalink }}';"><a href="{{ .Permalink }}"><span class="res-targets" id="{{ substr (urlize .Title) 0 3 }}-target"></span>{{.Title}}</a>
-                      <div class='circle-bg'>
-                      </div></li>
+                    <li class="circle-link" onClick="document.location.href='{{ .Permalink }}';"><a href="{{ .Permalink }}"><span class="res-targets" id="{{ substr (urlize .Title) 0 3 }}-target"></span>{{.Title}}</a>
+                      <div class='circle-bg'></div>
+                    </li>
                     {{ end }}
                   </ul>
                 </div>
@@ -113,12 +120,12 @@
             <div class="container">
               <div class="row align-items-center swirlbg">
                 
-                <div class="col-12 col-lg-5">
+                <div class="col-11 col-lg-7 col-xl-5">
                   {{ with .Site.GetPage "attitudes"}}
                   <h2 class="serif-head mb-pt">{{.Title}}</h2>
-                  <p class="text-right att-link d-none d-lg-block"><a href="{{ .Permalink }}" class="homelink"><span id="how-target"></span>See How</a></p>
+                  <li class="att-link circle-link d-none d-sm-table" onClick="document.location.href='{{ .Permalink }}';"><a href="{{ .Permalink }}" class=""><span class="res-targets" id="how-target"></span>See How</a><div class='circle-bg'></div></li>
                   <p>{{.Summary}}</p><div id="att-target"></div>
-                  <p class="text-right att-link d-lg-none"><a href="{{ .Permalink }}" class="homelink">See How</a></p>
+                  <p class="d-md-none"><a href="{{ .Permalink }}" class="homelink">Learn More</a></p>
                   {{end}}
                 </div>
               </div>
@@ -128,12 +135,12 @@
           <section id="home-rels">
             <div class="container">
               <div class="row justify-content-end">
-                <div class="col-12 col-lg-5 text-right">
+                <div class="col-11 col-lg-7 col-xl-5 text-right">
                   {{ with .Site.GetPage "relationships"}}
                   <h2 class="serif-head">{{.Title}}</h2>
-                  <p class="text-left rel-link d-none d-lg-block"><a href="{{ .Permalink }}" class="homelink rightlink">Learn More<span id="more-target"></span></a></p>
+                  <li class="rel-link circle-link d-none d-sm-table" onClick="document.location.href='{{ .Permalink }}';"><a href="{{ .Permalink }}" class="">Learn More<span class="res-targets" id="more-target"></span></a><div class='circle-bg'></div></li>
                   <p>{{.Summary}}</p><div id="rel-target"></div>
-                  <p class="text-left rel-link d-lg-none"><a href="{{ .Permalink }}" class="homelink rightlink">Learn More</a></p>
+                  <p class="d-md-none"><a href="{{ .Permalink }}" class="homelink rightlink">Learn More</a></p>
                   {{end}}
                 </div>
               </div>

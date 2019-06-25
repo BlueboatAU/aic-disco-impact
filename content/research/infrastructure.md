@@ -2,6 +2,7 @@
 
 title: "Infrastructure"
 order: "2"
+img: aic-placeholder.jpg
 
 ---
 <div id="top-target"></div>
@@ -24,6 +25,12 @@ The Australia-Indonesia Centre Infrastructure Cluster investigated the built, po
 1. Fostering research relationships that will extend beyond the life of the AIC Infrastructure Cluster. Notable connections include the good working relationship between the Institute of Rail Technology at Monash University and the Jakarta MRT, and the collaborative research work on fibre optics between Monash University and the Institut Teknologi Sepuluh Nopember (ITS) Surabaya.
 
 1. Emphasising the central role of stakeholders and end-users. Stakeholders outside the university sector included port and railway authorities in Australia and Indonesia, engineers, policy makers, and experts in private industry. Key stakeholders were engaged throughout to facilitate and develop relationships around data sharing. Notable relationships were established with PT Teluk Lamong, PT Jasamarga Surabaya Mojokerto, Pelindo III and Jakarta MRT.
+
+### $2M
+#### Total Investment
+
+### 53
+#### Total Researchers
 
 <div id="bot-target"></div>
 

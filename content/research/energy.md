@@ -2,6 +2,7 @@
 
 title: "Energy"
 order: "1"
+img: aic-placeholder.jpg
 
 ---
 <div id="top-target"></div>
@@ -34,6 +35,12 @@ Australia, too, has many remote Indigenous, mining and small-island communities.
 4. Evaluating options for large-scale generation and storage of renewable energy, including identification of potential pumped hydro energy storage sites and enumerating the benefits of deep decarbonisation of the Indonesian economy.
 
 4. Presentations to government and industry aim to shape policies and advance technologies to help reach Indonesia’s renewable energy targets set by President Joko Widodo’s government.
+
+### $2M
+#### Total Investment
+
+### 90
+#### Total Researchers
 
 <div id="bot-target"></div>
 ## PROJECTS

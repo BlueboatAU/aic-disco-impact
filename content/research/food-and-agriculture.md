@@ -2,6 +2,7 @@
 
 title: "Food And Agriculture"
 order: "5"
+img: aic-placeholder.jpg
 
 ---
 <div id="top-target"></div>
@@ -26,6 +27,12 @@ The Food and Agriculture Cluster’s work was highlighted by the groundbreaking 
 1. In-depth research on the challenges facing Indonesia’s small-island fishing communities, which are dealing with the impacts of falling fish stocks, along with numerous environmental, social and economic changes. 
 
 1. Recommendations on strengthening and expanding the Indonesian food-processing industry, a significant and growing contributor to the Indonesian economy.
+
+### $600K
+#### Total Investment
+
+### 46
+#### Total Researchers
 
 <div id="bot-target"></div>
 

@@ -2,6 +2,7 @@
 
 title: "Health"
 order: "4"
+img: aic-placeholder.jpg
 
 ---
 <div id="top-target"></div>
@@ -32,6 +33,12 @@ Maintaining the health and wellbeing of young people is of paramount importance 
 1. Evaluating options for large-scale generation and storage of renewable energy, including identification of potential pumped hydro energy storage sites and enumerating the benefits of deep decarbonisation of the Indonesian economy. 
 
 1. Presentations to government and industry aim to shape policies and advance technologies to help reach Indonesia’s renewable energy targets set by President Joko Widodo’s government. 
+
+### $2M
+#### Total Investment
+
+### 96
+#### Total Researchers
 
 <div id="bot-target"></div>
 
@@ -69,6 +76,6 @@ Maintaining the health and wellbeing of young people is of paramount importance 
 
 [Universal Health Coverage for the informal sector](#)
 
-[A] study of pneumonia in hospitalised Indonesian children and its association with vitamin D deficiency](#)
+[A study of pneumonia in hospitalised Indonesian children and its association with vitamin D deficiency](#)
 
 [Transform: Investing in leadership and building educational and translational capacity for early prevention of NCDs](#)

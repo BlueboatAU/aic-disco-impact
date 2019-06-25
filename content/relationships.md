@@ -2,6 +2,7 @@
 
 title: "Relationships"
 summary: "The Australia-Indonesia Centre brings together leaders from both nations to strengthen relationships, exchange knowledge, and establish new networks that increase prosperity in our region."
+img: aic-placeholder.jpg
 
 ---
 

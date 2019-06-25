@@ -2,6 +2,7 @@
 
 title: "Attitudes"
 summary: "One of the centre’s core objectives would be to improve Australians’ understanding and appreciation of contemporary Indonesia and, likewise, Indonesians’ understanding and appreciation of contemporary Australia"
+img: aic-placeholder.jpg
 
 ---
 
@@ -21,6 +22,12 @@ One of the centre’s core objectives would be to improve Australians’ underst
 1. Widespread media coverage of research activities in Indonesia and Australia 
 1. Forging dynamic partnerships between Indonesian and Australian educational institutions and other industry groups, involving significant capacity building and collaboration 
 1. Development of an Indonesian language version of an existing psychological text analysis software tool 
+
+### $700K
+#### Total Investment
+
+### 45
+#### Total Researchers
 
 <div id="bot-target"></div>
 

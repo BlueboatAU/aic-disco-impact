@@ -3,25 +3,20 @@
 #desc-target{
 	position: absolute;
 	top: 0;
-	right: 0;
-}
-#about-target, #chair-target, #how-target{
-	display: inline-block;
-	transform:translate(-16px, -4px);
-}
-#about-target-end, #more-target{
-	display: inline-block;
-	transform:translate(14px, -4px);
+	right: 15px;
 }
 #att-target{
 	position: absolute;
 	right: 15px;
-	top: 105px;
+	@media(max-width: 768){
+	right: 35px;
+	}
+	top: 90px;
 }
 #rel-target{
 	position: absolute;
 	left: 20px;
-	top: 105px;
+	top: 65px;
 }
 .res-targets{
 	position: absolute;
@@ -30,7 +25,21 @@
 }
 
 #int-wrap{
-	#top-target, #bot-target{
-		transform:translate(-13px, 10px);
+	#top-target{
+	transform:translate(-13px, 30px);
 	}
+	#bot-target{
+	transform:translate(-13px, 50px);
+	}
+	@media(min-width: 1200px){
+		#top-target{
+		transform:translate(-18px, 40px);
+		}
+		#bot-target{
+		transform:translate(-18px, 68px);
+		}
+	}
+}
+#enearrow{
+	width:5px;
 }
