@@ -737,7 +737,7 @@ a{
 	//background: #F2F2F2;
 	img{
 		height: 50px;
-		margin:10px 15px;
+		margin:10px 25px;
 		&.large-logo{
 			height: 70px;
 		}
@@ -972,6 +972,34 @@ a{
 		}
 	}
 }
+
+#download{
+	.row{
+    margin-top: 160px;
+	}
+	p{
+	text-transform: uppercase;
+    line-height: 1.8rem;
+    margin-bottom: 3rem;
+	}
+	a{
+	background: $l-gray;
+	display: inline-block;
+    margin: 0;
+    padding: 1rem;
+    transition: all .2s ease;
+        &:hover{
+    	background: $gold;
+    	text-decoration: none;
+    	color: $white;
+    	text-decoration: underline;
+    	text-decoration-color:$red;
+    	padding: 1rem 1.4rem;
+    }
+	}
+}
+
+
 //Keyframes
 @-webkit-keyframes fadeInFromNone {
     0% {
