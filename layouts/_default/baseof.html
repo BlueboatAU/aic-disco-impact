@@ -24,11 +24,11 @@
     <body data-spy="scroll" data-target="#indexnav" data-offset="50" >
          <!-- nav -->
         <div id="indexnav" class="list-group"  data-spy="affix" data-offset-top="205">
-          <a class="list-group-item" href="#home-about">About AIC</a>
-          <a class="list-group-item" href="#home-stats">Statistics</a>
-          <a class="list-group-item" href="#home-res">Research</a>
-          <a class="list-group-item" href="#home-att">Attitudes & Relationships</a>
-          <a class="list-group-item" href="#home-part">Partners</a>
+          <a class="list-group-item" href="#home-about"><p>About AIC</p></a>
+          <a class="list-group-item" href="#home-stats"><p>Statistics</p></a>
+          <a class="list-group-item" href="#home-res"><p>Research</p></a>
+          <a class="list-group-item" href="#home-att"><p>Attitudes & Relationships</p></a>
+          <a class="list-group-item" href="#home-part"><p>Partners</p></a>
         </div>
         <!-- mob nav -->
       <button id="mobnav-button" class="hamburger hamburger--collapse" type="button">
@@ -48,17 +48,17 @@
       <body >
        <!-- nav -->
         <div id="indexnav" class="list-group shown">
-          <a class="list-group-item" href="{{.Site.BaseURL}}">Home</a>
-          <a class='list-group-item {{ if eq .File.LogicalName "about.md" }}active{{end}}' href="{{.Site.BaseURL}}about">About AIC</a>
-          <a class='list-group-item {{ if eq .File.LogicalName "messages.md" }}active{{end}}' href="{{.Site.BaseURL}}messages">Messages</a>
-          <a class='list-group-item {{ if eq .Section "research" }}active{{end}}' href="{{.Site.BaseURL}}research">Research</a> 
+          <a class="list-group-item" href="{{.Site.BaseURL}}"><p>Home</p></a>
+          <a class='list-group-item {{ if eq .File.LogicalName "about.md" }}active{{end}}' href="{{.Site.BaseURL}}about"><p>About AIC</p></a>
+          <a class='list-group-item {{ if eq .File.LogicalName "messages.md" }}active{{end}}' href="{{.Site.BaseURL}}messages"><p>Messages</p></a>
+          <a class='list-group-item {{ if eq .Section "research" }}active{{end}}' href="{{.Site.BaseURL}}research"><p>Research</p></a> 
             <ul class='{{ if ne .Section "research" }}d-none{{end}}'>
               {{ range sort (where .Site.RegularPages "Section" "research") "Params.order" }}
-              <li><a href="{{ .Permalink }}" class=''>{{.Title}}</a></li>
+              <li><a href="{{ .Permalink }}" class=''><p>{{.Title}}</p></a></li>
               {{ end }}
             </ul>
-          <a class='list-group-item {{ if eq .File.LogicalName "attitudes.md" }}active{{end}}' href="{{.Site.BaseURL}}attitudes">Attitudes</a>
-          <a class='list-group-item {{ if eq .File.LogicalName "relationships.md" }}active{{end}}' href="{{.Site.BaseURL}}relationships">Relationships</a>
+          <a class='list-group-item {{ if eq .File.LogicalName "attitudes.md" }}active{{end}}' href="{{.Site.BaseURL}}attitudes"><p>Attitudes</p></a>
+          <a class='list-group-item {{ if eq .File.LogicalName "relationships.md" }}active{{end}}' href="{{.Site.BaseURL}}relationships"><p>Relationships</p></a>
         </div>
 
          <!-- mob nav -->
@@ -68,17 +68,17 @@
         </span>
       </button>
       <div id="mobnav" class="list-group">
-        <a class="list-group-item" href="{{.Site.BaseURL}}">Home</a>
-          <a class='list-group-item {{ if eq .File.LogicalName "about.md" }}active{{end}}' href="{{.Site.BaseURL}}about">About AIC</a>
-          <a class='list-group-item {{ if eq .File.LogicalName "messages.md" }}active{{end}}' href="{{.Site.BaseURL}}messages">Messages</a>
-          <a class='list-group-item {{ if eq .Section "research" }}active{{end}}' href="{{.Site.BaseURL}}research">Research</a> 
+        <a class="list-group-item" href="{{.Site.BaseURL}}"><p>Home</p></a>
+          <a class='list-group-item {{ if eq .File.LogicalName "about.md" }}active{{end}}' href="{{.Site.BaseURL}}about"><p>About AIC</p></a>
+          <a class='list-group-item {{ if eq .File.LogicalName "messages.md" }}active{{end}}' href="{{.Site.BaseURL}}messages"><p>Messages</p></a>
+          <a class='list-group-item {{ if eq .Section "research" }}active{{end}}' href="{{.Site.BaseURL}}research"><p>Research</p></a> 
             <ul class='{{ if ne .Section "research" }}d-none{{end}}'>
               {{ range sort (where .Site.RegularPages "Section" "research") "Params.order" }}
-              <li><a href="{{ .Permalink }}" class=''>{{.Title}}</a></li>
+              <li><a href="{{ .Permalink }}" class=''><p>{{.Title}}</p></a></li>
               {{ end }}
             </ul>
-          <a class='list-group-item {{ if eq .File.LogicalName "attitudes.md" }}active{{end}}' href="{{.Site.BaseURL}}attitudes">Attitudes</a>
-          <a class='list-group-item {{ if eq .File.LogicalName "relationships.md" }}active{{end}}' href="{{.Site.BaseURL}}relationships">Relationships</a>
+          <a class='list-group-item {{ if eq .File.LogicalName "attitudes.md" }}active{{end}}' href="{{.Site.BaseURL}}attitudes"><p>Attitudes</p></a>
+          <a class='list-group-item {{ if eq .File.LogicalName "relationships.md" }}active{{end}}' href="{{.Site.BaseURL}}relationships"><p>Relationships</p></a>
         </div>
         <div id="nav-bg"></div>
       {{ end }}
@@ -109,14 +109,36 @@
               <div class="row">
                 <div class="col-12 text-center">
                   <p>An Initiative Of</p>
-                  <img class="lazyload" data-src="{{.Site.BaseURL}}img/partners/partners-1.svg">
+                  <!--<img class="lazyload" data-src="{{.Site.BaseURL}}img/partners/partners-1.svg">-->
+
+                  <img class="lazyload" data-src="{{.Site.BaseURL}}img/partners/logos/partners-5.png">
+                  <img class="lazyload" data-src="{{.Site.BaseURL}}img/partners/logos/partners-6.png">
+                  <img class="lazyload" data-src="{{.Site.BaseURL}}img/partners/logos/partners-7.png">
+                  <img class="lazyload" data-src="{{.Site.BaseURL}}img/partners/logos/partners-17.png">
                   <p>In Collaboration With</p>
-                  <img class="pr-lg-5 lazyload" data-src="{{.Site.BaseURL}}img/partners/partners-2.svg">
-                  <img class="lazyload" data-src="{{.Site.BaseURL}}img/partners/partners-3.svg">
+                  <!--<img class="pr-lg-5 lazyload" data-src="{{.Site.BaseURL}}img/partners/partners-2.svg">-->
+                  <!--<img class="lazyload" data-src="{{.Site.BaseURL}}img/partners/partners-3.svg">-->
+
+                  <img class="lazyload" data-src="{{.Site.BaseURL}}img/partners/logos/partners-3.png">
+                  <img class="lazyload" data-src="{{.Site.BaseURL}}img/partners/logos/partners-1.png">
+                  <img class="lazyload" data-src="{{.Site.BaseURL}}img/partners/logos/partners-4.png">
+
+                  <img class="lazyload" data-src="{{.Site.BaseURL}}img/partners/logos/partners-15.png">
+                  <img class="lazyload" data-src="{{.Site.BaseURL}}img/partners/logos/partners-16.png">
+                  <img class="lazyload" data-src="{{.Site.BaseURL}}img/partners/logos/partners-2.png">
+                  <img class="lazyload" data-src="{{.Site.BaseURL}}img/partners/logos/partners-14.png">
                   <p>Supported By</p>
-                  <img class="lazyload" data-src="{{.Site.BaseURL}}img/partners/partners-4.svg">
+                  <!--<img class="lazyload" data-src="{{.Site.BaseURL}}img/partners/partners-4.svg">-->
+
+                  <img class="lazyload large-logo" data-src="{{.Site.BaseURL}}img/partners/logos/partners-10.png">
+                  <img class="lazyload large-logo" data-src="{{.Site.BaseURL}}img/partners/logos/partners-8.png">
+                  <img class="lazyload large-logo" data-src="{{.Site.BaseURL}}img/partners/logos/partners-9.png">
                   <p>With Corporate Partners</p>
-                  <img class="lazyload" data-src="{{.Site.BaseURL}}img/partners/partners-5.svg">
+                  <!--<img class="lazyload" data-src="{{.Site.BaseURL}}img/partners/partners-5.svg">-->
+
+                  <img class="lazyload" data-src="{{.Site.BaseURL}}img/partners/logos/partners-11.png">
+                  <img class="lazyload large-logo" data-src="{{.Site.BaseURL}}img/partners/logos/partners-13.png">
+                  <img class="lazyload" data-src="{{.Site.BaseURL}}img/partners/logos/partners-12.png">
                 </div>
               </div>
             </div>

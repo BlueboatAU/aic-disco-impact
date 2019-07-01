@@ -180,28 +180,35 @@ a{
     z-index: 1000;
     display: block;
     text-transform: uppercase;
-    transform:translateX(-150px);
+    transform:translateX(-160px);
     transition:all 0.2s ease;
     .list-group-item {
     position: relative;
     display: block;
-    width:140px;
-    padding: 0.5rem;
-    padding-right: 1.5rem;
-    margin-bottom: 1px;
-    background-color: #fff;
-    background:$l-gray;
+    margin: 0;
+    padding: 0;
     border: unset;
     border-radius: 0;
     transition:all 0.2s ease;
     letter-spacing: 1px;
-    &.active{
+    background: unset !important;
+    width: 140px;
+     p{
+     	display: inline-block;
+    	margin:0;
+    	background:$l-gray;
+   	padding: 0.5rem;
+    padding-right: 1.5rem;
+    margin-bottom: 1px;
+    transition:all 0.2s ease;
+    }
+    &.active p{
     	background: $gold;
-    	width: 160px;
     	text-decoration: underline;
     	text-decoration-color:$red;
+    	color: $white;
     }
-    &:hover{
+    &:hover p{
     	background: $gold;
     	text-decoration: none;
     	color: $white;
@@ -225,6 +232,7 @@ a{
     		}
     		a{
     			color: $black;
+    			font-size: 0.9rem;
     			&.active{
     				color:$gold;
     			}
@@ -258,7 +266,7 @@ a{
 	text-transform: uppercase;
     transition:all 0.4s ease;
     top:0px;
-    margin:35% auto;
+    margin:25% auto;
     right:0;
     font-size: 1.3rem;
     transform:translateX(81vw);
@@ -266,22 +274,28 @@ a{
     position: relative;
     display: block;
     width:80vw;
-    padding: 1.5rem;
-    padding-right: 1.5rem;
-    margin-bottom: 5px;
-    background-color: #fff;
-    background:$l-gray;
+    background:unset !important;
     border: unset;
     border-radius: 0;
-    transition:all 0.2s ease;
     letter-spacing: 1px;
-    &.active{
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    p{
+    	display: inline-block;
+    	transition:all 0.2s ease;
+    	padding: 1.5rem;
+		padding-right: 1.5rem;
+		margin-bottom: 5px;
+		background:$l-gray;
+    }
+    &.active p{
     	background: $gold;
-    	width: 140px;
     	text-decoration: underline;
     	text-decoration-color:$red;
+    	color: $white;
     }
-    &:hover{
+    &:hover p{
     	background: $gold;
     	text-decoration: none;
     	color: $white;
@@ -294,20 +308,29 @@ a{
     	transform:unset;
     }
     ul{
-    	margin: 2px 0;
+    	margin: 0;
     	list-style: none;
-    	padding: 10px 0.8rem 10px;
-    	background:$white;
+    	padding: 0;
+    	background:unset !important;
     	li{
-    		margin-bottom: 0.8rem;
+    		margin-bottom: 0.2rem;
+    		text-align: right;
+
     		&:last-child{
-    			margin-bottom: 0;
+    			margin-bottom: 0.6rem;
     		}
     		&:hover{
     			text-decoration: underline;
     		}
     		a{
     			color: $black;
+    			p{
+    				background: $white;
+    				display: inline-block;
+    				margin:0;
+    				padding: 10px 0.8rem 10px;
+    				font-size: 1.1rem;
+    			}
     			&.active{
     				color:$gold;
     			}
@@ -524,6 +547,7 @@ a{
 #home-stats{
 	.stat-title{
 		padding-bottom: 20px;
+		letter-spacing: 1px;
 	}
 	.map{
 	max-width: 550px;
@@ -546,10 +570,12 @@ a{
     			font-size: 0.9rem;
     		}
 			.stat-box-title{
-				font-weight: normal;
+			font-weight: normal;
 			color: $d-black;
 			font-family: $fontsans;
 			padding:10px 0 0 10px;
+			letter-spacing: 1px;
+			font-size: 1rem;
 			}
 				img{
 					width:25px;
@@ -710,7 +736,11 @@ a{
 	text-transform: uppercase;
 	//background: #F2F2F2;
 	img{
-		max-height: 50px;
+		height: 50px;
+		margin:10px 15px;
+		&.large-logo{
+			height: 70px;
+		}
 
 	}
 	p{
@@ -734,11 +764,14 @@ a{
 				margin-bottom: unset;
 			}
 		}
-	
-	img{
-		height:50px;
+	.int-logo{
 		transform: translate(-370px,-20px);
 		position: absolute;
+		z-index: 5;
+	}
+	img{
+		height:50px;
+
 	}
 	p span{padding-left: 200px}
 	h2{

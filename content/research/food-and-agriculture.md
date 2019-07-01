@@ -34,9 +34,8 @@ The Food and Agriculture Cluster’s work was highlighted by the groundbreaking 
 ### 46
 #### Total Researchers
 
-<div id="bot-target"></div>
 
-## PROJECTS
+<h2><div id="bot-target"></div> Projects</h2>
 
 [Assessing food security and resilience of small island communities to socio-environmental changes: the case of the Kei islands in Southeast Maluku](#)
 
