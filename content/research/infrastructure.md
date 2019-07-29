@@ -2,7 +2,7 @@
 
 title: "Infrastructure"
 order: "2"
-img: aic-placeholder.jpg
+img: infrastructure.jpg
 
 ---
 <div id="top-target"></div>
@@ -27,7 +27,7 @@ The Australia-Indonesia Centre Infrastructure Cluster investigated the built, po
 1. Emphasising the central role of stakeholders and end-users. Stakeholders outside the university sector included port and railway authorities in Australia and Indonesia, engineers, policy makers, and experts in private industry. Key stakeholders were engaged throughout to facilitate and develop relationships around data sharing. Notable relationships were established with PT Teluk Lamong, PT Jasamarga Surabaya Mojokerto, Pelindo III and Jakarta MRT.
 
 ### $2M
-#### Total Investment
+#### Total Investment*
 
 ### 53
 #### Total Researchers

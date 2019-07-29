@@ -2,7 +2,7 @@
 
 title: "Food And Agriculture"
 order: "5"
-img: aic-placeholder.jpg
+img: food-and-agri.jpg
 
 ---
 <div id="top-target"></div>
@@ -29,13 +29,13 @@ The Food and Agriculture Cluster’s work was highlighted by the groundbreaking 
 1. Recommendations on strengthening and expanding the Indonesian food-processing industry, a significant and growing contributor to the Indonesian economy.
 
 ### $600K
-#### Total Investment
+#### Total Investment*
 
 ### 46
 #### Total Researchers
 
-
-<h2><div id="bot-target"></div> Projects</h2>
+<div id="bot-target"></div>
+## Projects
 
 [Assessing food security and resilience of small island communities to socio-environmental changes: the case of the Kei islands in Southeast Maluku](#)
 

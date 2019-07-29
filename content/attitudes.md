@@ -2,7 +2,7 @@
 
 title: "Attitudes"
 summary: "One of the centre’s core objectives would be to improve Australians’ understanding and appreciation of contemporary Indonesia and, likewise, Indonesians’ understanding and appreciation of contemporary Australia"
-img: aic-placeholder.jpg
+img: attitudes.jpg
 
 ---
 
@@ -24,7 +24,7 @@ One of the centre’s core objectives would be to improve Australians’ underst
 1. Development of an Indonesian language version of an existing psychological text analysis software tool 
 
 ### $700K
-#### Total Investment
+#### Total Investment*
 
 ### 45
 #### Total Researchers

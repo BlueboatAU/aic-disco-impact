@@ -845,7 +845,7 @@ a{
 		}
 	}
 	.row{
-		   margin-bottom: 200px;
+		   margin-bottom: 10rem;
 		     z-index: 3;
     		position: relative;
 	}
@@ -922,6 +922,14 @@ a{
   			}
   		}
 	}
+	.asterisk{
+		font-style: italic;
+		margin-top: 2.5rem;
+			@media(min-width: 1200px){
+				font-size: 12px;
+				line-height: 17px;
+			}
+	}
 	a{
 		text-decoration: underline;
 		transition:all 0.1s ease;
@@ -975,12 +983,12 @@ a{
 
 #download{
 	.row{
-    margin-top: 160px;
+    margin-bottom: 12rem;
 	}
 	p{
 	text-transform: uppercase;
     line-height: 1.8rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2.6rem;
 	}
 	a{
 	background: $l-gray;

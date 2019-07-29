@@ -2,7 +2,7 @@
 
 title: "Urban Water"
 order: "3"
-img: aic-placeholder.jpg
+img: urban-water.jpg
 
 ---
 
@@ -36,7 +36,7 @@ The Urban Water Cluster research program aimed to achieve a detailed understandi
 1. The Governor of West Java expressed a strong desire to include advice from the cluster into the new urban design guidelines being developed.
 
 ### $2M
-#### Total Investment
+#### Total Investment*
 
 ### 62
 #### Total Researchers

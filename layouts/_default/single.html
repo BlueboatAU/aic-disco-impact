@@ -16,6 +16,9 @@
                 <div class="col-12 col-lg-9">
                 	<h1 class="serif-head">{{ .Title }}</h1>
     			{{ .Content }}
+
+          {{ if or (eq .Section "research") (eq .File.LogicalName "attitudes.md") }}<p class="asterisk">*Does not include in-kind investment</p>{{ end }}
+
                 </div>
             </div>
         </div>

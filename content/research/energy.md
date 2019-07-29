@@ -2,7 +2,7 @@
 
 title: "Energy"
 order: "1"
-img: aic-placeholder.jpg
+img: energy.jpg
 
 ---
 <div id="top-target"></div>
@@ -37,7 +37,7 @@ Australia, too, has many remote Indigenous, mining and small-island communities.
 4. Presentations to government and industry aim to shape policies and advance technologies to help reach Indonesia’s renewable energy targets set by President Joko Widodo’s government.
 
 ### $2M
-#### Total Investment
+#### Total Investment*
 
 ### 90
 #### Total Researchers
