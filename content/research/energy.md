@@ -45,32 +45,32 @@ Australia, too, has many remote Indigenous, mining and small-island communities.
 <div id="bot-target"></div>
 ## PROJECTS
 
-[Affordable, sustainable energy for all – transforming electricity supply in Australia and Indonesia](#)
+[Affordable, sustainable energy for all – transforming electricity supply in Australia and Indonesia]()
 
-[Optimal microgrid design and operations](#)
+[Optimal microgrid design and operations](https://australiaindonesiacentre.org/projects/optimal-microgrid-design-operations/)
 
-[Indonesian energy technology and resource assessments](#)
+[Indonesian energy technology and resource assessments](https://australiaindonesiacentre.org/projects/indonesian-energy-technology-resource-assessments/)
 
-[Microgrids as enablers of sustainable power system investment and decarbonisation pathways](#)
+[Microgrids as enablers of sustainable power system investment and decarbonisation pathways](https://australiaindonesiacentre.org/projects/microgrids-enablers-sustainable-power-system-investment-decarbonisation-pathways/)
 
-[Near off-grid solutions using renewable energy technologies and demand side prediction](#)
+[Near off-grid solutions using renewable energy technologies and demand side prediction](https://australiaindonesiacentre.org/projects/near-off-grid-solutions-using-renewable-energy-technologies-demand-side-prediction/)
 
-[Building coalitions to support community empowerment through renewable energy and livelihood solutions](#)
+[Building coalitions to support community empowerment through renewable energy and livelihood solutions](https://australiaindonesiacentre.org/projects/building-coalitions-support-community-empowerment-renewable-energy-livelihood-solutions/)
 
-[Operational security support for power and energy systems: networked microgrids as the solution](#)
+[Operational security support for power and energy systems: networked microgrids as the solution](https://australiaindonesiacentre.org/projects/operational-security-support-power-energy-systems-networked-microgrids-solution/)
 
-[Indonesia-Australia renewable energy super grid](#)
+[Indonesia-Australia renewable energy super grid](https://australiaindonesiacentre.org/projects/mapping-the-energy-resources-and-infrastructure-of-indonesia-for-a-comparative-analysis-of-indonesian-and-australian-opportunities-for-and-barriers-to-efficient-and-equitable-system-growth-and-elec/)
 
-[Remote area electrification in Indonesia](#)
+[Remote area electrification in Indonesia](https://australiaindonesiacentre.org/projects/remote-area-electrification-in-indonesia-mapping-the-archipelago-and-formulating-renewable-solutions-at-district-and-local-levels/)
 
-[Energy sustainability in naval and aerospace systems through improved turbulence management](#)
+[Energy sustainability in naval and aerospace systems through improved turbulence management](https://australiaindonesiacentre.org/projects/energy-sustainability-naval-aerospace-systems-improved-turbulence-management/)
 
-[Case study on decarbonising the Indonesian electricity sector](#)
+[Case study on decarbonising the Indonesian electricity sector](https://australiaindonesiacentre.org/projects/case-study-decarbonising-indonesian-electricity-sector/)
 
-[Priorities and pathways to implementation for energy and urban sustainable development goals for Indonesia](#)
+[Priorities and pathways to implementation for energy and urban sustainable development goals for Indonesia](https://australiaindonesiacentre.org/projects/priorities-and-pathways-to-implementation-for-energy-and-urban-sustainable-development-goals-for-indonesia/)
 
-[Overcoming legal and governance barriers to clean energy in Indonesia and Australia](#)
+[Overcoming legal and governance barriers to clean energy in Indonesia and Australia](https://australiaindonesiacentre.org/projects/overcoming-legal-and-governance-barriers-to-clean-energy-in-indonesia-and-australia/)
 
-[Evaluation of technologies for energy from biomass and waste](#)
+[Evaluation of technologies for energy from biomass and waste](https://energy.australiaindonesiacentre.org/projects/evaluation-of-technologies-for-energy-from-biomass-and-waste/)
 
-[Mapping the energy resources and infrastructure of Indonesia for efficient and equitable system growth, and electrification of remote/island populations](#)
+[Mapping the energy resources and infrastructure of Indonesia for efficient and equitable system growth, and electrification of remote/island populations](https://australiaindonesiacentre.org/projects/mapping-the-energy-resources-and-infrastructure-of-indonesia-to-enable-effective-and-equitable-system-growth-and-electrification-of-remoteisland-populations/)

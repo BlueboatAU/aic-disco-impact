@@ -37,8 +37,8 @@ The Food and Agriculture Cluster’s work was highlighted by the groundbreaking 
 <div id="bot-target"></div>
 ## Projects
 
-[Assessing food security and resilience of small island communities to socio-environmental changes: the case of the Kei islands in Southeast Maluku](#)
+[Assessing food security and resilience of small island communities to socio-environmental changes: the case of the Kei islands in Southeast Maluku](https://australiaindonesiacentre.org/projects/assessing-food-security-and-resilience-of-small-island-communities-to-socio-environmental-changes/)
 
-[Food processing and value chain development in Indonesia](#)
+[Food processing and value chain development in Indonesia](https://australiaindonesiacentre.org/projects/food-processing-and-value-chain-development-in-indonesia/)
 
-[Soil information to support sustainable agriculture and food security in Indonesia](#)
+[Soil information to support sustainable agriculture and food security in Indonesia](https://australiaindonesiacentre.org/projects/soil-information-to-support-sustainable-agriculture-and-food-security-in-indonesia/)

@@ -36,24 +36,24 @@ The Australia-Indonesia Centre Infrastructure Cluster investigated the built, po
 
 ## PROJECTS
 
-[Changing the landscape of rail through advanced asset health monitoring systems – A novel method to increase the resilience of track infrastructure](#)
+[Changing the landscape of rail through advanced asset health monitoring systems – A novel method to increase the resilience of track infrastructure](https://australiaindonesiacentre.org/projects/changing-landscape-rail-advanced-asset-health-monitoring-systems-novel-method-increase-resilience-track-infrastructure/)
 
-[Seismic performance of critical infrastructures in port development](#)
+[Seismic performance of critical infrastructures in port development](https://australiaindonesiacentre.org/projects/seismic-performance-critical-infrastructures-port-development/)
 
-[Efficient facilitation of major infrastructure projects](#)
+[Efficient facilitation of major infrastructure projects](https://australiaindonesiacentre.org/projects/efficient-facilitation-major-infrastructure-projects/)
 
-[Connectivity – from sea to rail, sea to road, road to rail](#)
+[Connectivity – from sea to rail, sea to road, road to rail](https://australiaindonesiacentre.org/projects/connectivity-sea-rail-sea-road-road-rail/)
 
-[Development of fibre-optic-based sensors for critical road, railway, port and bridge infrastructure](#)
+[Development of fibre-optic-based sensors for critical road, railway, port and bridge infrastructure](https://australiaindonesiacentre.org/projects/development-fibre-optic-based-sensors-critical-road-railway-port-bridge-pipeline-monitoring/)
 
-[Life-cycle structural performance assessment framework for concrete bridges](#)
+[Life-cycle structural performance assessment framework for concrete bridges](https://australiaindonesiacentre.org/projects/life-cycle-structural-performance-assessment-framework-for-concrete-bridges/)
 
-[Asset life improvement of rail infrastructure](#)
+[Asset life improvement of rail infrastructure](https://australiaindonesiacentre.org/projects/asset-life-improvement-of-rail-infrastructure/)
 
-[Australia-Indonesia joint workshop on smart cities](#)
+[Australia-Indonesia joint workshop on smart cities](https://australiaindonesiacentre.org/projects/australia-indonesia-joint-workshop-on-smart-cities/)
 
-[Improving rail infrastructure – rail transportation (interfacing to a port intermodal terminal)](#)
+[Improving rail infrastructure – rail transportation (interfacing to a port intermodal terminal)](https://australiaindonesiacentre.org/projects/improving-rail-infrastructure-rail-transportation-interfacing-port-intermodal-terminal/)
 
-[Effective structuring and packaging of funding and financing arrangements for the delivery of infrastructure](#)
+[Effective structuring and packaging of funding and financing arrangements for the delivery of infrastructure](https://australiaindonesiacentre.org/projects/effective-structuring-packaging-funding-financing-arrangements-delivery-infrastructure/)
 
 

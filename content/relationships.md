@@ -18,20 +18,20 @@ The Centre pursues this goal through a series of programs, dialogues, and partne
 
 ## Partnerships in Indonesia and Australia
 
- [Australia-Indonesia Leaders Program](#)
+ [Australia-Indonesia Leaders Program](https://australiaindonesiacentre.org/leadership/)
 
- [In Conversation dialogues](#)
+ [In Conversation dialogues]()
 
- [In Conversation series | Indonesia](#)
+ [In Conversation series | Indonesia]()
 
- [In Conversation series | Australia](#)
+ [In Conversation series | Australia]()
 
- [Indonesia Now roadshow](#)
+ [Indonesia Now roadshow]()
 
- [Research capacity](#)
+ [Research capacity](https://australiaindonesiacentre.org/research/)
 
- [Youth leaders](#)
+ [Youth leaders](https://australiaindonesiacentre.org/leadership/)
 
- [Australia-Indonesia Fashion Exchange](#)
+ [Australia-Indonesia Fashion Exchange](https://australiaindonesiacentre.org/news/applications-open-australia-indonesia-fashion-exchange/)
 
- [Melbourne Symphony Orchestra – Yogyakarta](#)
+ [Melbourne Symphony Orchestra – Yogyakarta](https://australiaindonesiacentre.org/projects/mso-collaboration-government-yogyakarta/)

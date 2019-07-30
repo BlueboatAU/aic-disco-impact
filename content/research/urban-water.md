@@ -45,24 +45,24 @@ The Urban Water Cluster research program aimed to achieve a detailed understandi
 
 ## PROJECTS
 
-[Water-sensitive city transition strategy for Bogor Raya](#) 
+[Water-sensitive city transition strategy for Bogor Raya]() 
 
-[Benchmarking Greater Bogor using the Water Sensitive Cities Index](#) 
+[Benchmarking Greater Bogor using the Water Sensitive Cities Index]() 
 
-[Governance for a water-friendly transition in Greater Bogor](#) 
+[Governance for a water-friendly transition in Greater Bogor]() 
 
-[Infrastructure adaptation scenarios: technical report](#)  
+[Infrastructure adaptation scenarios: technical report]()  
 
-[A guidance manual for green infrastructure application](#)  
+[A guidance manual for green infrastructure application]()  
 
-[Case study: Pulo Geulis’ transition roadmap to WSC](#)  
+[Case study: Pulo Geulis’ transition roadmap to WSC]()  
 
-[Case study: Situ Front City’s transition strategy to WSC Case study: Sentul City](#)  
+[Case study: Situ Front City’s transition strategy to WSC Case study: Sentul City]()  
 
-[Case study: Griya Katulampa](#) 
+[Case study: Griya Katulampa]() 
 
-[Developing a new regulatory approach to ensuring potable water quality and pollution control in East Java](#)  
+[Developing a new regulatory approach to ensuring potable water quality and pollution control in East Java](https://australiaindonesiacentre.org/projects/developing-new-regulatory-approach-ensuring-potable-water-quality-pollution-control-environment-east-java/)  
 
-[The socio-economic impacts of floods on Jakarta](#) 
+[The socio-economic impacts of floods on Jakarta](https://australiaindonesiacentre.org/projects/socio-economic-impacts-floods-jakarta/) 
 
-[A socio-technical investigation of Jakarta’s opportunity for leapfrogging towards sustainable water management](#) 
+[A socio-technical investigation of Jakarta’s opportunity for leapfrogging towards sustainable water management](https://australiaindonesiacentre.org/projects/leapfrogging-jakarta-towards-sustainable-water-management-become-water-sensitive-city/) 
