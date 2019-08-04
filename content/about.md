@@ -1,7 +1,7 @@
 ---
 
 title: "About The AIC"
-summary: "The Australia-Indonesia Centre has directed research into solutions to pressing local problems, and an investment in conscious relationship building."
+summary: "The Australia-Indonesia Centre has directed research into solutions to pressing local problems, and invested in conscious relationship building."
 img: about.jpg
 
 ---

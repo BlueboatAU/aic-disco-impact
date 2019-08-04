@@ -12,7 +12,7 @@ img: relationships.jpg
 
 The Australia-Indonesia Centre brings together leaders from both nations to strengthen relationships, exchange knowledge, and establish new networks that increase prosperity in our region.
 
-The Centre pursues this goal through a series of programs, dialogues, and partnerships in Indonesia and Australia. 
+The Centre pursues this goal through a series of programs, dialogues, and partnerships and dialogues in Indonesia and Australia. 
 
 <div id="bot-target"></div>
 
@@ -20,13 +20,13 @@ The Centre pursues this goal through a series of programs, dialogues, and partne
 
  [Australia-Indonesia Leaders Program](https://australiaindonesiacentre.org/leadership/)
 
- [In Conversation dialogues]()
+ [In Conversation dialogues 2018](https://www.youtube.com/watch?v=wmOfePVzBt0&list=PLNWgbk-WVI9xAgdBYjAQkr7PcNzsTcE4C&index=1)
 
- [In Conversation series | Indonesia]()
+ [In Conversation dialogues 2017](https://www.youtube.com/watch?v=x_H0zoKDS3g&list=PLNWgbk-WVI9xw9iyVRYAwL4vWwiJ7qlZp)
 
- [In Conversation series | Australia]()
+ [Digital Economy Panel 2018](https://www.youtube.com/watch?v=paT-7EODlUI&list=PLNWgbk-WVI9ymtrNPqqcVT9daxtlgdsJW)
 
- [Indonesia Now roadshow]()
+ [Indonesia Australia Digital Forum 2018](https://www.youtube.com/watch?v=0azJy6FiIdI&list=PLNWgbk-WVI9yxnpOFNWIJzmowbU74wycQ)
 
  [Research capacity](https://australiaindonesiacentre.org/research/)
 

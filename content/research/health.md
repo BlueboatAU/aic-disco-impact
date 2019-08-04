@@ -9,30 +9,24 @@ img: health.jpg
 
 ## Innovative approaches to address primary prevention of Non-Communicable Diseases.
 
-Maintaining the health and wellbeing of young people is of paramount importance to a society’s sustainable growth and advancement. Investing in human capital should always go hand-inhand with the building of infrastructure and markets, and will be the key to Indonesia’s success in this century; it will be just as vital for Australia’s continued growth.<!--more-->
+Maintaining the health and wellbeing of young people is of paramount importance to a society’s sustainable growth and advancement. The great challenge facing both countries will be preventing illness, disability and premature death from non-communicable diseases (NCDs). The World Health Organisation estimates such diseases are responsible for 71 per cent of worldwide deaths each year, and has declared them the second greatest threat to global health, behind only pollution and climate change.<!--more-->
 
 ## KEY ACHIEVEMENTS 
-1. Creating a detailed Indonesian energy technology assessment (IETA) projecting the future cost of generating power via different technologies. The report will help planners and policymakers make informed decisions about the future of Indonesia’s energy network. It was presented at a forum at the Australian Embassy Jakarta in 2018.
+4. Identifying barriers to fresh nutritious food among young people, their need for spaces to be physically active, as well as the increasing pressures that negatively impact their mental wellbeing.
 
-1. Securing APEC funding for the project titled “Integrated energy system planning for equitable access to sustainable energy for remote communities in the APEC regions using North Sulawesi as a pilot project/ testbed.” Researchers from Monash, Institut Teknologi Bandung and Institut Pertanian Bogor are engaging with communities in North Sulawesi, City of Bitung and Universitas Sam Ratulangi to model a Low Carbon Model Town initiative. 
+4. The pilot implementation of healthy lifestyle trainin (around diet, exercise and the dangers of smoking within two existing Indonesian school health programs.
 
-1. Attracting a $100,000 commitment from CWP Renewables, a global company with business activities in both Australia and Indonesia. 
+4. Evaluation of the advertising tactics of Big Formula showed Indonesian and Australian mothers and health professionals were influenced away from exclusive breastfeeding towards purchasing their less-healthy products.
 
-1. Working with the European Climate Foundation fund to develop a state-of-the art analysis of the renewable transformation potential for the Java-Bali power system. 
+4. Geospatial mapping demonstrated the saturation of Big Tobacco advertising targeting children and adolescents around schools (places that are intended to be healthy and safe spaces for children and young people).
 
-1. Building deep and lasting research networks between Australian and Indonesian academics and institutions. 
+4. In October 2017, the Indonesian delegates to the International Association for Adolescent Health Congress committed to form a national adolescent health association. This has led to the establishment of the Indonesian Association for Adolescent Health (AKAR), a resource for influencing Indonesian policy agendas, research, education and training, and clinical practice.
 
-1. Evaluating the potential for biofuel use and production in Indonesia’s future energy mix. 
+4. Raising awareness to the ‘double burden’ of nutrition in children and adolescents, with the need to reduce stunting and obesity.
 
-1. Developing models for the design and installation of microgrids in remote communities, taking into account specific economic, social and cultural factors and examining the impacts of electrification. 
+4. Supporting the development of empowered, bilateral collaborative research partnerships.
 
-1. Creating robust models for the integration of cleanenergy microgrids into large-scale transmission systems. 
-
-1. Developing a novel method of measuring fouling on a ship’s hull, a technology with the potential to deliver significant widespread economic and environmental benefits to the global transport industry. 
-
-1. Evaluating options for large-scale generation and storage of renewable energy, including identification of potential pumped hydro energy storage sites and enumerating the benefits of deep decarbonisation of the Indonesian economy. 
-
-1. Presentations to government and industry aim to shape policies and advance technologies to help reach Indonesia’s renewable energy targets set by President Joko Widodo’s government. 
+4. Providing opportunities for experiencing research engagement, consultation and learning practices through divergent thinking, appreciative inquiry and participant ownership.
 
 ### $2M
 #### Total Investment*
@@ -78,4 +72,4 @@ Maintaining the health and wellbeing of young people is of paramount importance 
 
 [A study of pneumonia in hospitalised Indonesian children and its association with vitamin D deficiency](https://australiaindonesiacentre.org/projects/study-pneumonia-hospitalised-indonesian-children-association-vitamin-d-deficiency/)
 
-[Transform: Investing in leadership and building educational and translational capacity for early prevention of NCDs]()
+[Transform: Investing in leadership and building educational and translational capacity for early prevention of NCDs](https://australiaindonesiacentre.org/projects/transform-investing-in-leadership-and-building-educational-and-translational-capacity-for-early-prevention-of-ncds/)

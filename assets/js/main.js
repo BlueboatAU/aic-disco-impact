@@ -66,7 +66,7 @@ function drawTheLines(){
   //used for testing ==> console.log(docsize);
   $('.linesvg').css('height', docsize);
 
-  if(location.pathname === '/aic1418/'){
+  if(location.pathname === '/'){
     //about lines
   drawLine('desc-target', 'about-target', 'aboutline');
   drawLine('about-target', 'chair-target', 'chairline');
@@ -101,7 +101,6 @@ window.onload = function() {
     sal();
     
     //hamburger menu
-
   var $hamburger = $(".hamburger");
   var $nav = $("#mobnav");
   var $bg = $("#nav-bg");

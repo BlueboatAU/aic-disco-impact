@@ -1,16 +1,16 @@
 ---
 
 title: "Attitudes"
-summary: "One of the centre’s core objectives would be to improve Australians’ understanding and appreciation of contemporary Indonesia and, likewise, Indonesians’ understanding and appreciation of contemporary Australia"
+summary: "One of the centre’s core objectives is to improve Australians’ understanding and appreciation of contemporary Indonesia and, likewise, Indonesians’ understanding and appreciation of contemporary Australia"
 img: attitudes.jpg
 
 ---
 
 <div id="top-target"></div>
 
-## Promoting Contemporary understanding of Indonesia and Australia.
+## Promoting A Contemporary understanding of Indonesia and Australia.
 
-One of the centre’s core objectives would be to improve Australians’ understanding and appreciation of contemporary Indonesia and, likewise, Indonesians’ understanding and appreciation of contemporary Australia 
+One of the centre’s core objectives is to improve Australians’ understanding and appreciation of contemporary Indonesia and, likewise, Indonesians’ understanding and appreciation of contemporary Australia 
 
 ## KEY ACHIEVEMENTS 
 1. ReelOzInd! Short Film Festival and Competition reached 3,900 people through 68 screenings held across both countries and over 14,000 online audience over the past 3 years. 

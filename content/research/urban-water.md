@@ -45,21 +45,21 @@ The Urban Water Cluster research program aimed to achieve a detailed understandi
 
 ## PROJECTS
 
-[Water-sensitive city transition strategy for Bogor Raya]() 
+[Water-sensitive city transition strategy for Bogor Raya](https://australiaindonesiacentre.org/projects/water-sensitive-city-leapfrogging-strategy-for-bogor-raya/) 
 
-[Benchmarking Greater Bogor using the Water Sensitive Cities Index]() 
+[Benchmarking Greater Bogor using the Water Sensitive Cities Index](https://australiaindonesiacentre.org/projects/benchmarking-greater-bogor-using-the-water-sensitive-cities-index/) 
 
-[Governance for a water-friendly transition in Greater Bogor]() 
+[Governance for a water-friendly transition in Greater Bogor](https://australiaindonesiacentre.org/projects/governance-for-a-water-friendly-transition-in-greater-bogor/) 
 
-[Infrastructure adaptation scenarios: technical report]()  
+[Infrastructure adaptation scenarios: technical report](https://australiaindonesiacentre.org/infrastructure-adaptation-scenarios-technical-report/)  
 
-[A guidance manual for green infrastructure application]()  
+[A guidance manual for green infrastructure application](https://australiaindonesiacentre.org/projects/a-guidance-manual-for-green-infrastructure-application/)  
 
-[Case study: Pulo Geulis’ transition roadmap to WSC]()  
+[Case study: Pulo Geulis’ transition roadmap to WSC](https://australiaindonesiacentre.org/case-study-pulo-geulis-transition-roadmap-to-wsc/)  
 
-[Case study: Situ Front City’s transition strategy to WSC Case study: Sentul City]()  
+[Case study: Situ Front City’s transition strategy to WSC Case study: Sentul City](https://australiaindonesiacentre.org/project/case-study-situ-front-citys-transition-strategy-to-wsc/)  
 
-[Case study: Griya Katulampa]() 
+[Case study: Griya Katulampa](https://australiaindonesiacentre.org/projects/case-study-griya-katulampa/) 
 
 [Developing a new regulatory approach to ensuring potable water quality and pollution control in East Java](https://australiaindonesiacentre.org/projects/developing-new-regulatory-approach-ensuring-potable-water-quality-pollution-control-environment-east-java/)  
 

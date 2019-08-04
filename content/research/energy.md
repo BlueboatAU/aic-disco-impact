@@ -45,7 +45,7 @@ Australia, too, has many remote Indigenous, mining and small-island communities.
 <div id="bot-target"></div>
 ## PROJECTS
 
-[Affordable, sustainable energy for all – transforming electricity supply in Australia and Indonesia]()
+[Affordable, sustainable energy for all – transforming electricity supply in Australia and Indonesia](https://australiaindonesiacentre.org/projects/affordable-sustainable-energy-for-all-transforming-electricity-supply-in-australia-and-indonesia/)
 
 [Optimal microgrid design and operations](https://australiaindonesiacentre.org/projects/optimal-microgrid-design-operations/)
 
