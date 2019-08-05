@@ -71,6 +71,6 @@ Australia, too, has many remote Indigenous, mining and small-island communities.
 
 [Overcoming legal and governance barriers to clean energy in Indonesia and Australia](https://australiaindonesiacentre.org/projects/overcoming-legal-and-governance-barriers-to-clean-energy-in-indonesia-and-australia/)
 
-[Evaluation of technologies for energy from biomass and waste](https://energy.australiaindonesiacentre.org/projects/evaluation-of-technologies-for-energy-from-biomass-and-waste/)
+[Evaluation of technologies for energy from biomass and waste](https://australiaindonesiacentre.org/projects/evaluation-of-technologies-for-energy-from-biomass-and-waste/)
 
 [Mapping the energy resources and infrastructure of Indonesia for efficient and equitable system growth, and electrification of remote/island populations](https://australiaindonesiacentre.org/projects/mapping-the-energy-resources-and-infrastructure-of-indonesia-to-enable-effective-and-equitable-system-growth-and-electrification-of-remoteisland-populations/)
