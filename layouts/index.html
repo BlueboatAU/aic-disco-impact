@@ -2,7 +2,7 @@
 {{ $isHome := true }}
  <!-- lines to draw -->
 <svg class="linesvg">
-  <line class="drawnline tabline" id="aboutline" /><line class="drawnline tabline" id="chairline" />
+  <line class="drawnline tabline d-md-block" id="aboutline" /><line class="drawnline tabline" id="chairline" />
     <line class="drawnline mobline" id="eneline" /><line class="drawnline mobline" id="infline" />
       <line class="drawnline mobline" id="urbline" /><line class="drawnline mobline" id="healine" />
         <line class="drawnline tabline" id="attline" /><line class="drawnline tabline" id="relline" />
@@ -53,11 +53,11 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-5">
                   {{ with .Site.GetPage "about"}}
-                  <li class="aboutlink circle-link d-none d-sm-table" onClick="document.location.href='{{ .Permalink }}';"><a class="" href="{{ .Permalink }}"><span id="about-target" class="res-targets"></span>{{.Title}}</a><div class='circle-bg'></div></li>
+                  <li class="aboutlink circle-link d-none d-md-table" onClick="document.location.href='{{ .Permalink }}';"><a class="" href="{{ .Permalink }}"><span id="about-target" class="res-targets"></span>{{.Title}}</a><div class='circle-bg'></div></li>
                   <p class="d-md-none"><a href="{{ .Permalink }}" class="homelink">{{.Title}}</a></p>
                   {{end}}
                   {{ with .Site.GetPage "messages"}}
-                  <li class="messlink circle-link d-none d-sm-table" onClick="document.location.href='{{ .Permalink }}';"><a class="" href="{{ .Permalink }}"><span id="chair-target" class="res-targets"></span>{{.Title}}</a><div class='circle-bg'></div></li>
+                  <li class="messlink circle-link d-none d-md-table" onClick="document.location.href='{{ .Permalink }}';"><a class="" href="{{ .Permalink }}"><span id="chair-target" class="res-targets"></span>{{.Title}}</a><div class='circle-bg'></div></li>
                   <p class="d-md-none text-right"><a href="{{ .Permalink }}" class="homelink rightlink">{{.Title}}</a></p>
                   {{end}}
                 </div>
