@@ -5,7 +5,7 @@
   <line class="drawnline tabline d-md-block" id="aboutline" /><line class="drawnline tabline" id="chairline" />
     <line class="drawnline mobline" id="eneline" /><line class="drawnline mobline" id="infline" />
       <line class="drawnline mobline" id="urbline" /><line class="drawnline mobline" id="healine" />
-        <line class="drawnline tabline" id="attline" /><line class="drawnline tabline" id="relline" />
+        <line class="drawnline d-done d-md-block" id="attline" /><line class="drawnline d-done d-md-block" id="relline" />
 
         <circle id="enecircle" r="8" class="drawnline mobline" />
         <svg id="enearrow" class="drawnline mobline"><polyline points="1.16 0.29 2.87 7.14 9.72 5.43"/></svg>
@@ -123,7 +123,7 @@
                 <div class="col-11 col-lg-7 col-xl-5">
                   {{ with .Site.GetPage "attitudes"}}
                   <h2 class="serif-head mb-pt">{{.Title}}</h2>
-                  <li class="att-link circle-link d-none d-sm-table" onClick="document.location.href='{{ .Permalink }}';"><a href="{{ .Permalink }}" class=""><span class="res-targets" id="how-target"></span>See How</a><div class='circle-bg'></div></li>
+                  <li class="att-link circle-link d-none d-md-table" onClick="document.location.href='{{ .Permalink }}';"><a href="{{ .Permalink }}" class=""><span class="res-targets" id="how-target"></span>See How</a><div class='circle-bg'></div></li>
                   <p>{{.Summary}}</p><div id="att-target"></div>
                   <p class="d-md-none"><a href="{{ .Permalink }}" class="homelink">Learn More</a></p>
                   {{end}}
@@ -138,7 +138,7 @@
                 <div class="col-11 col-lg-7 col-xl-5 text-right">
                   {{ with .Site.GetPage "relationships"}}
                   <h2 class="serif-head">{{.Title}}</h2>
-                  <li class="rel-link circle-link d-none d-sm-table" onClick="document.location.href='{{ .Permalink }}';"><a href="{{ .Permalink }}" class="">Learn More<span class="res-targets" id="more-target"></span></a><div class='circle-bg'></div></li>
+                  <li class="rel-link circle-link d-none d-md-table" onClick="document.location.href='{{ .Permalink }}';"><a href="{{ .Permalink }}" class="">Learn More<span class="res-targets" id="more-target"></span></a><div class='circle-bg'></div></li>
                   <p>{{.Summary}}</p><div id="rel-target"></div>
                   <p class="d-md-none"><a href="{{ .Permalink }}" class="homelink rightlink">Learn More</a></p>
                   {{end}}
